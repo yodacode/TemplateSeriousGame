@@ -8,12 +8,37 @@ $notif-width:250px!default;
 /*-------------------------------------------*\
   GLOBAL
 /*-------------------------------------------*/
+.icon-bordered {
+  font-size: 1.9em;
+  vertical-align: middle;
+  margin: 0px 4px;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  &.red {
+    color: #e02b07;
+  }  
+
+}
+
+/*-------------------------------------------*\
+  CUSTOM BOOTSTRAP
+/*-------------------------------------------*/
 .dropdown-menu {
   border-radius: 5px;
 }
 
-// Navbar
-@media (min-width: 992px) {
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
+/////////////////// Navbar ////////////////////
+@media (max-width: 768px) {
+  .navbar-collapse {
+    width: 100% !important;
+    margin-left: 0px!important;
+  }
+}
+
+@media (min-width: 768px) {
   .navbar {
     padding: 17px 0px;
     .navbar-brand {
@@ -33,7 +58,7 @@ $notif-width:250px!default;
       text-align: center;
       border-radius: 50%;
       padding: 0px;
-      margin-left: 40px;
+      margin-left: 30px;
       font-size: 1.5em;
       .pills {
         width: 15px;

@@ -5,27 +5,54 @@
   GLOBAL
 /*-------------------------------------------*/
 /* line 11, ../sass/front.scss */
+.icon-bordered {
+  font-size: 1.9em;
+  vertical-align: middle;
+  margin: 0px 4px;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+/* line 16, ../sass/front.scss */
+.icon-bordered.red {
+  color: #e02b07;
+}
+
+/*-------------------------------------------*\
+  CUSTOM BOOTSTRAP
+/*-------------------------------------------*/
+/* line 25, ../sass/front.scss */
 .dropdown-menu {
   border-radius: 5px;
 }
 
-@media (min-width: 992px) {
-  /* line 17, ../sass/front.scss */
+/* line 29, ../sass/front.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
+@media (max-width: 768px) {
+  /* line 35, ../sass/front.scss */
+  .navbar-collapse {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+}
+@media (min-width: 768px) {
+  /* line 42, ../sass/front.scss */
   .navbar {
     padding: 17px 0px;
   }
-  /* line 19, ../sass/front.scss */
+  /* line 44, ../sass/front.scss */
   .navbar .navbar-brand {
     height: auto;
     margin-right: 50px;
   }
-  /* line 23, ../sass/front.scss */
+  /* line 48, ../sass/front.scss */
   .navbar .navbar-nav > li > a, .navbar a.navbar-brand {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 25px;
   }
-  /* line 29, ../sass/front.scss */
+  /* line 54, ../sass/front.scss */
   .navbar a.btn-notif {
     width: 40px;
     height: 40px;
@@ -33,10 +60,10 @@
     text-align: center;
     border-radius: 50%;
     padding: 0px;
-    margin-left: 40px;
+    margin-left: 30px;
     font-size: 1.5em;
   }
-  /* line 38, ../sass/front.scss */
+  /* line 63, ../sass/front.scss */
   .navbar a.btn-notif .pills {
     width: 15px;
     height: 15px;
@@ -53,25 +80,25 @@
 /*-------------------------------------------*\
   SITE NOTIF
 /*-------------------------------------------*/
-/* line 57, ../sass/front.scss */
+/* line 82, ../sass/front.scss */
 .site-notif {
   display: none;
 }
 
 @media (min-width: 992px) {
-  /* line 61, ../sass/front.scss */
+  /* line 86, ../sass/front.scss */
   html, body {
     height: 100%;
   }
 
-  /* line 65, ../sass/front.scss */
+  /* line 90, ../sass/front.scss */
   .header {
     position: static;
     left: 0px;
     right: 0px;
   }
 
-  /* line 71, ../sass/front.scss */
+  /* line 96, ../sass/front.scss */
   .site-notif {
     display: block;
     position: absolute;
@@ -91,13 +118,13 @@
     transition-duration: 0.3s;
   }
 
-  /* line 84, ../sass/front.scss */
+  /* line 109, ../sass/front.scss */
   .site-container {
     height: 100%;
     overflow: hidden;
   }
 
-  /* line 89, ../sass/front.scss */
+  /* line 114, ../sass/front.scss */
   .site-pusher {
     height: 100%;
     -moz-transition-duration: 0.3s;
@@ -110,7 +137,7 @@
     transform: translateX(0px);
   }
 
-  /* line 95, ../sass/front.scss */
+  /* line 120, ../sass/front.scss */
   .site-content {
     position: absolute;
     overflow-y: scroll;
@@ -121,14 +148,14 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  /* line 106, ../sass/front.scss */
+  /* line 131, ../sass/front.scss */
   .site-with-notif .site-pusher {
     -moz-transform: translateX(-250px);
     -ms-transform: translateX(-250px);
     -webkit-transform: translateX(-250px);
     transform: translateX(-250px);
   }
-  /* line 109, ../sass/front.scss */
+  /* line 134, ../sass/front.scss */
   .site-with-notif .site-cache {
     position: absolute;
     left: 0;
