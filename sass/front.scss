@@ -1,381 +1,88 @@
 @import "compass";
 
 /*-------------------------------------------*\
-  $VARIABLE
+  VARIABLE
 /*-------------------------------------------*/
-$header-bg:#2c3e50;
-$header-height:45px;
-
-$blue:#2c3e50;
-$grey: #C5C5C5;
-$grey-light: #E8E8E8;
-$green: #18bc9c;
-$red: #F46E6E;
-$menu-width:230px!default;
+$notif-width:250px!default;
 
 /*-------------------------------------------*\
-  $GLOBAL
+  GLOBAL
 /*-------------------------------------------*/
-
-body {
-  background-color: #D7D7D7;
+.dropdown-menu {
+  border-radius: 5px;
 }
-.app-content {
-  padding-top: 66px;
-}
-.no-padding {
-  padding: 0 0 0 0;
-}
-
-.rate {
-  font-size: 0.8em;
-}
-
-.regular-border {
-  border-radius: 0px;
-}
-
-.container {
-  padding-left: 10px;
-  padding-right: 10px;
+// Navbar
+@media (min-width: 992px) {
+  .navbar {
+    padding: 17px 0px;
+    .navbar-brand {
+      height: auto;
+      margin-right: 50px;
+    }
+    .navbar-nav > li > a, a.navbar-brand  {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 25px;
+    }
+  }
 }
 
-.overflow {
-  overflow: hidden;
-}
+/*-------------------------------------------*\
+  SITE NOTIF
+/*-------------------------------------------*/
+.site-notif { display: none; }
+// Desktop
+@media (min-width: 992px) {
 
-.scrolly {
-    height: 500px;
+  html,body {
+    height: 100%;
+  }
+
+  .header {
+    position: static;
+    left: 0px;
+    right: 0px;
+  }
+
+  .site-notif {
+    display: block;
+    position: absolute;
+    right: 0; 
+    top: 0;
+    bottom: 0;
+    background: #eeeeef;  
+    width: $notif-width;
     overflow-y: scroll;
-    width: 100%;
+    @include transform(translateX($notif-width));
+    @include transition-duration(0.3s);
+  }
+
+  .site-container {
     height: 100%;
-    -webkit-overflow-scrolling:touch;
-}
-
-/*-------------------------------------------*\
-  $HEADER
-/*-------------------------------------------*/
-.header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: $header-height;
-  line-height: $header-height;
-  background-color: $header-bg;
-  z-index: 1000;
-
-  -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-
-  a {
-    color: #FFF;
-  }
-  a:hover,
-  a.active {
-    text-decoration: none;
-    color: $green;
-  }
-
-}
-
-.header.sticky {
-  font-size: 24px;
-    line-height: 48px;
-  height: 48px;
-    background: #efc47D;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.header-logo {
-  font-weight: bold;
-  text-indent: -9999px;
-  float: left;
-  /*background-image: image-url("illspots-logo.png");*/
-  background-image: url(../img/illspots-logo.png);
-  background-color: $green;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  width: 70px;
-}
-
-.header-back {
-  position: absolute;
-  top: 0px;
-  left: 3px;
-  display: none;
-}
-
-.header-action {
-  display: inline-block;
-  float: right;
-  margin-left: 2px;
-  height: 100%;
-  padding: 0px 7px;
-  background-color: darken($header-bg, 5%);
-  span {
-    vertical-align: middle;
-    line-height: inherit;
-    margin: 0px 5px;
-  }
-}
-
-/*-------------------------------------------*\
-  $MENU
-/*-------------------------------------------*/
-.menu {
-  float: left;
-  a {
-    display: inline-block;
-    margin: 0 10px;
-  }
-}
-
-a.menu-profil {
-  display: none;
-}
-
-/*-------------------------------------------*\
-  $VIEW
-/*-------------------------------------------*/
-.view {
-  position:absolute;
-  top: $header-height;
-  width:100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-/*-------------------------------------------*\
-  $POST
-/*-------------------------------------------*/
-.post {
-  background-color: #FFF;
-  padding-top: 10px;
-  position: relative;
-  margin: 5px 0px;
-  border: solid 1px #BEBEBE;
-
-  a {
-    color: $blue;
-  }
-
-  .panel-body {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-  .post-avatar {
-    width: 100%;
-    max-width: 80px;
-    margin-left: 7px;
-  }
-
-  .post-author {
-    font-weight: bold;
-    font-size: 1em;
-  }
-
-  .post-distance,
-  .post-date {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    font-size: 0.8em;
-    color: $grey;
-  }
-
-  .post-descr {
-    font-size: 0.8em;
-  }
-
-  .post-subtitle {
-    font-size: 0.8em;
-    color: $grey;
-  }
-
-  .post-foot {
-    margin-top: 7px;
-    padding: 0;
-    border-top: dashed 1px #B2B2B2;
-  }
-
-    .post-foot-btn {
-      text-align: center;
-      color: #6E6E6E;
-      display: inline-block;
-      padding: 10px 0px;
-    }
-
-    .post-foot-btn.active {
-      color: $green;
-    }
-
-    .post-foot-btn.active.red {
-      color: $red;
-    }
-
-    .post-foot-link {
-      font-size: 0.8em;
-      margin-right: 5px;
-      margin-top: 10px;
-      display: inline-block;
-    }
-
-/*-------------------------------------------*\
-  $POPUP
-/*-------------------------------------------*/
-.popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  bottom: 0px;
-  left: 0px;
-  z-index: 2;
-  background-color: #fff;
-}
-
-.popup-btn {
-  margin-top: 9px;
-}
-
-.popup-container {
-  padding-top: 65px;
-  position: relative;
-}
-
-.popup-btn-close {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-}
-
-
-/*-------------------------------------------*\
-  $SLIDESHOW
-/*-------------------------------------------*/
-.slideshow {
-  max-height: 300px;
-  overflow: hidden;
-
-  -webkit-transition: max-height 0.8s;
-  -moz-transition: max-height 0.8s;
-  transition: max-height 0.8s;
-
-  img {
-    width: 100%;
-  }
-}
-
-.slideshow.small {
-  max-height: 55px;
-}
-
-
-
-/*-------------------------------------------*\
-  $HEADING
-/*-------------------------------------------*/
-
-.heading {
-  position: relative;
-  height: 75px;
-  margin-top: -10px;
-  margin-bottom: 15px;
-
-  .title {
-    position: absolute;
-    top: -45px;
-    height: 55px;
-    z-index: 1;
-    width: 100%;
-    text-align: center;
-    line-height: 18px;
-    color: #FFF;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 7px;
-  }
-
-  .badge {
-    background-color: $green;
-    width: 50px;
-    height: 50px;
-    @include border-radius(50%);
-    font-size: 1em;
-    line-height: 2.5em;
-    position: absolute;
-    z-index: 2;
-      left: 0;
-      right: 0;
-      margin: auto;
-      border: solid 3px #FFF;
-  }
-
-  .rating {
-    width: 120px;
-    height: 21px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    margin: auto;
-  }
-
-  .liking {
-    color: $red;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    font-size: 1.5em;
-  }
-
-  .checking {
-    color: $green;
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    font-size: 1.5em;
-  }
-}
-
-/*-------------------------------------------*\
-  $RESPONSIVE
-/*-------------------------------------------*/
-@media only screen and (max-width: 750px) {
-
-/*-----------------------*\
-  $global
-/*-----------------------*/
-.app {
-
-}
-  .app-container,
-  .app-pusher {
-    height: 100%;
-  }
-  .app-container {
     overflow: hidden;
   }
-  .app-pusher {
+
+  .site-pusher {
+    height: 100%;
     @include transition-duration(0.3s);
     @include transform(translateX(0px));
   }
-  .app-content {
+
+  .site-content {
     position: absolute;
-    top: $header-height;
-    left: 0;
-    bottom: 0;
-    padding-top: 0;
     overflow-y: scroll;
-    width: 100%;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     -webkit-overflow-scrolling:touch;
   }
-  .with-sidebar {
-    .app-pusher { @include transform(translateX($menu-width * -1)); }
-    .app-cache {
+
+  .site-with-notif {
+    .site-pusher { 
+      @include transform(translateX($notif-width * -1)); 
+    }
+    .site-cache {
       position: absolute;
       left: 0;
       right: 0;
@@ -386,106 +93,5 @@ a.menu-profil {
       background-color: rgba(0,0,0,0.6);
     }
   }
-/*-----------------------*\
-  $header
-/*-----------------------*/
-.header {
-  position: static;
-  height: $header-height;
-}
-  .header-icon {
-    position: relative;
-    display: block;
-    float: right;
-    width: 50px;
-    height: $header-height;
-    cursor: pointer;
-
-    &:after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 16px;
-      height: 0;
-      top: 15px;
-      left: 17px;
-      @include box-shadow(0 0px 0 1px #FFF, 0 6px 0 1px #FFF, 0 12px 0 1px #FFF);
-    }
-  }
-  .header-logo {
-    background-size: 33px;
-  }
-
-  .header-action-label {
-    display: none;
-  }
-  .header-back {
-    display: block;
-  }
-/*-----------------------*\
-  $menu
-/*-----------------------*/
-.menu {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: #FFF;
-  width: $menu-width;
-
-  @include transform(translateX($menu-width));
-  a {
-    color: #494949;
-    display: block;
-    height: 40px;
-    text-indent: 5px;
-    line-height: 40px;
-    margin: 0;
-    border-bottom: solid 1px #E2E2E2;
-  }
-  a {
-    span {
-      margin-right: 34px;
-    }
-  }
-  a.active,
-  a:hover {
-    color: #494949;
-    background-color: $grey-light;
-  }
-}
-
-  .menu-profil {
-    min-height: 60px;
-    overflow: hidden;
-    display: block;
-    background-color: $grey-light;
-
-    img {
-      width: 40px;
-      float: left;
-      margin: 10px 5px;
-    }
-    span {
-      width: 125px;
-      font-size: 12px;
-      margin: 10px 0px 5px 0px;
-    }
-  }
-
-  .menu-profil-name {
-    float: left;
-    font-weight: bold;
-    display: inline;
-  }
-
-
-/*-----------------------*\
-  $view
-/*-----------------------*/
-.view {
-  top: 0;
-}
-
 
 }

@@ -1,387 +1,81 @@
 /*-------------------------------------------*\
-  $VARIABLE
+  VARIABLE
 /*-------------------------------------------*/
 /*-------------------------------------------*\
-  $GLOBAL
+  GLOBAL
 /*-------------------------------------------*/
-/* line 20, ../sass/front.scss */
-body {
-  background-color: #D7D7D7;
+/* line 11, ../sass/front.scss */
+.dropdown-menu {
+  border-radius: 5px;
 }
 
-/* line 23, ../sass/front.scss */
-.app-content {
-  padding-top: 66px;
+@media (min-width: 992px) {
+  /* line 16, ../sass/front.scss */
+  .navbar {
+    padding: 17px 0px;
+  }
+  /* line 18, ../sass/front.scss */
+  .navbar .navbar-brand {
+    height: auto;
+    margin-right: 50px;
+  }
+  /* line 22, ../sass/front.scss */
+  .navbar .navbar-nav > li > a, .navbar a.navbar-brand {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+  }
 }
-
-/* line 26, ../sass/front.scss */
-.no-padding {
-  padding: 0 0 0 0;
-}
-
-/* line 30, ../sass/front.scss */
-.rate {
-  font-size: 0.8em;
-}
-
-/* line 34, ../sass/front.scss */
-.regular-border {
-  border-radius: 0px;
-}
-
-/* line 38, ../sass/front.scss */
-.container {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-/* line 43, ../sass/front.scss */
-.overflow {
-  overflow: hidden;
-}
-
-/* line 47, ../sass/front.scss */
-.scrolly {
-  height: 500px;
-  overflow-y: scroll;
-  width: 100%;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-
 /*-------------------------------------------*\
-  $HEADER
+  SITE NOTIF
 /*-------------------------------------------*/
-/* line 58, ../sass/front.scss */
-.header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 45px;
-  line-height: 45px;
-  background-color: #2c3e50;
-  z-index: 1000;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-/* line 70, ../sass/front.scss */
-.header a {
-  color: #FFF;
-}
-/* line 73, ../sass/front.scss */
-.header a:hover,
-.header a.active {
-  text-decoration: none;
-  color: #18bc9c;
-}
-
-/* line 81, ../sass/front.scss */
-.header.sticky {
-  font-size: 24px;
-  line-height: 48px;
-  height: 48px;
-  background: #efc47D;
-  text-align: left;
-  padding-left: 20px;
-}
-
-/* line 90, ../sass/front.scss */
-.header-logo {
-  font-weight: bold;
-  text-indent: -9999px;
-  float: left;
-  /*background-image: image-url("illspots-logo.png");*/
-  background-image: url(../img/illspots-logo.png);
-  background-color: #18bc9c;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  width: 70px;
-}
-
-/* line 104, ../sass/front.scss */
-.header-back {
-  position: absolute;
-  top: 0px;
-  left: 3px;
+/* line 33, ../sass/front.scss */
+.site-notif {
   display: none;
 }
 
-/* line 111, ../sass/front.scss */
-.header-action {
-  display: inline-block;
-  float: right;
-  margin-left: 2px;
-  height: 100%;
-  padding: 0px 7px;
-  background-color: #233140;
-}
-/* line 118, ../sass/front.scss */
-.header-action span {
-  vertical-align: middle;
-  line-height: inherit;
-  margin: 0px 5px;
-}
-
-/*-------------------------------------------*\
-  $MENU
-/*-------------------------------------------*/
-/* line 128, ../sass/front.scss */
-.menu {
-  float: left;
-}
-/* line 130, ../sass/front.scss */
-.menu a {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-/* line 136, ../sass/front.scss */
-a.menu-profil {
-  display: none;
-}
-
-/*-------------------------------------------*\
-  $VIEW
-/*-------------------------------------------*/
-/* line 143, ../sass/front.scss */
-.view {
-  position: absolute;
-  top: 45px;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-/*-------------------------------------------*\
-  $POST
-/*-------------------------------------------*/
-/* line 154, ../sass/front.scss */
-.post {
-  background-color: #FFF;
-  padding-top: 10px;
-  position: relative;
-  margin: 5px 0px;
-  border: solid 1px #BEBEBE;
-}
-/* line 161, ../sass/front.scss */
-.post a {
-  color: #2c3e50;
-}
-/* line 165, ../sass/front.scss */
-.post .panel-body {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-/* line 171, ../sass/front.scss */
-.post-avatar {
-  width: 100%;
-  max-width: 80px;
-  margin-left: 7px;
-}
-
-/* line 177, ../sass/front.scss */
-.post-author {
-  font-weight: bold;
-  font-size: 1em;
-}
-
-/* line 182, ../sass/front.scss */
-.post-distance,
-.post-date {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  font-size: 0.8em;
-  color: #C5C5C5;
-}
-
-/* line 191, ../sass/front.scss */
-.post-descr {
-  font-size: 0.8em;
-}
-
-/* line 195, ../sass/front.scss */
-.post-subtitle {
-  font-size: 0.8em;
-  color: #C5C5C5;
-}
-
-/* line 200, ../sass/front.scss */
-.post-foot {
-  margin-top: 7px;
-  padding: 0;
-  border-top: dashed 1px #B2B2B2;
-}
-
-/* line 206, ../sass/front.scss */
-.post-foot-btn {
-  text-align: center;
-  color: #6E6E6E;
-  display: inline-block;
-  padding: 10px 0px;
-}
-
-/* line 213, ../sass/front.scss */
-.post-foot-btn.active {
-  color: #18bc9c;
-}
-
-/* line 217, ../sass/front.scss */
-.post-foot-btn.active.red {
-  color: #F46E6E;
-}
-
-/* line 221, ../sass/front.scss */
-.post-foot-link {
-  font-size: 0.8em;
-  margin-right: 5px;
-  margin-top: 10px;
-  display: inline-block;
-}
-
-/*-------------------------------------------*\
-  $POPUP
-/*-------------------------------------------*/
-/* line 231, ../sass/front.scss */
-.popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  bottom: 0px;
-  left: 0px;
-  z-index: 2;
-  background-color: #fff;
-}
-
-/* line 241, ../sass/front.scss */
-.popup-btn {
-  margin-top: 9px;
-}
-
-/* line 245, ../sass/front.scss */
-.popup-container {
-  padding-top: 65px;
-  position: relative;
-}
-
-/* line 250, ../sass/front.scss */
-.popup-btn-close {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-}
-
-/*-------------------------------------------*\
-  $SLIDESHOW
-/*-------------------------------------------*/
-/* line 260, ../sass/front.scss */
-.slideshow {
-  max-height: 300px;
-  overflow: hidden;
-  -webkit-transition: max-height 0.8s;
-  -moz-transition: max-height 0.8s;
-  transition: max-height 0.8s;
-}
-/* line 268, ../sass/front.scss */
-.slideshow img {
-  width: 100%;
-}
-
-/* line 273, ../sass/front.scss */
-.slideshow.small {
-  max-height: 55px;
-}
-
-/*-------------------------------------------*\
-  $HEADING
-/*-------------------------------------------*/
-/* line 283, ../sass/front.scss */
-.heading {
-  position: relative;
-  height: 75px;
-  margin-top: -10px;
-  margin-bottom: 15px;
-}
-/* line 289, ../sass/front.scss */
-.heading .title {
-  position: absolute;
-  top: -45px;
-  height: 55px;
-  z-index: 1;
-  width: 100%;
-  text-align: center;
-  line-height: 18px;
-  color: #FFF;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 7px;
-}
-/* line 302, ../sass/front.scss */
-.heading .badge {
-  background-color: #18bc9c;
-  width: 50px;
-  height: 50px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  font-size: 1em;
-  line-height: 2.5em;
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  margin: auto;
-  border: solid 3px #FFF;
-}
-/* line 317, ../sass/front.scss */
-.heading .rating {
-  width: 120px;
-  height: 21px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0px;
-  margin: auto;
-}
-/* line 327, ../sass/front.scss */
-.heading .liking {
-  color: #F46E6E;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  font-size: 1.5em;
-}
-/* line 335, ../sass/front.scss */
-.heading .checking {
-  color: #18bc9c;
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  font-size: 1.5em;
-}
-
-/*-------------------------------------------*\
-  $RESPONSIVE
-/*-------------------------------------------*/
-@media only screen and (max-width: 750px) {
-  /*-----------------------*\
-    $global
-  /*-----------------------*/
-  /* line 355, ../sass/front.scss */
-  .app-container,
-  .app-pusher {
+@media (min-width: 992px) {
+  /* line 37, ../sass/front.scss */
+  html, body {
     height: 100%;
   }
 
-  /* line 359, ../sass/front.scss */
-  .app-container {
+  /* line 41, ../sass/front.scss */
+  .header {
+    position: static;
+    left: 0px;
+    right: 0px;
+  }
+
+  /* line 47, ../sass/front.scss */
+  .site-notif {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #eeeeef;
+    width: 250px;
+    overflow-y: scroll;
+    -moz-transform: translateX(250px);
+    -ms-transform: translateX(250px);
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+
+  /* line 60, ../sass/front.scss */
+  .site-container {
+    height: 100%;
     overflow: hidden;
   }
 
-  /* line 362, ../sass/front.scss */
-  .app-pusher {
+  /* line 65, ../sass/front.scss */
+  .site-pusher {
+    height: 100%;
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
@@ -392,27 +86,26 @@ a.menu-profil {
     transform: translateX(0px);
   }
 
-  /* line 366, ../sass/front.scss */
-  .app-content {
+  /* line 71, ../sass/front.scss */
+  .site-content {
     position: absolute;
-    top: 45px;
-    left: 0;
-    bottom: 0;
-    padding-top: 0;
     overflow-y: scroll;
-    width: 100%;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     -webkit-overflow-scrolling: touch;
   }
 
-  /* line 377, ../sass/front.scss */
-  .with-sidebar .app-pusher {
-    -moz-transform: translateX(-230px);
-    -ms-transform: translateX(-230px);
-    -webkit-transform: translateX(-230px);
-    transform: translateX(-230px);
+  /* line 82, ../sass/front.scss */
+  .site-with-notif .site-pusher {
+    -moz-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
+    -webkit-transform: translateX(-250px);
+    transform: translateX(-250px);
   }
-  /* line 378, ../sass/front.scss */
-  .with-sidebar .app-cache {
+  /* line 85, ../sass/front.scss */
+  .site-with-notif .site-cache {
     position: absolute;
     left: 0;
     right: 0;
@@ -421,124 +114,5 @@ a.menu-profil {
     height: 100%;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.6);
-  }
-
-  /*-----------------------*\
-    $header
-  /*-----------------------*/
-  /* line 392, ../sass/front.scss */
-  .header {
-    position: static;
-    height: 45px;
-  }
-
-  /* line 396, ../sass/front.scss */
-  .header-icon {
-    position: relative;
-    display: block;
-    float: right;
-    width: 50px;
-    height: 45px;
-    cursor: pointer;
-  }
-  /* line 404, ../sass/front.scss */
-  .header-icon:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 16px;
-    height: 0;
-    top: 15px;
-    left: 17px;
-    -moz-box-shadow: 0 0px 0 1px #FFF, 0 6px 0 1px #FFF, 0 12px 0 1px #FFF;
-    -webkit-box-shadow: 0 0px 0 1px #FFF, 0 6px 0 1px #FFF, 0 12px 0 1px #FFF;
-    box-shadow: 0 0px 0 1px #FFF, 0 6px 0 1px #FFF, 0 12px 0 1px #FFF;
-  }
-
-  /* line 415, ../sass/front.scss */
-  .header-logo {
-    background-size: 33px;
-  }
-
-  /* line 419, ../sass/front.scss */
-  .header-action-label {
-    display: none;
-  }
-
-  /* line 422, ../sass/front.scss */
-  .header-back {
-    display: block;
-  }
-
-  /*-----------------------*\
-    $menu
-  /*-----------------------*/
-  /* line 428, ../sass/front.scss */
-  .menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: #FFF;
-    width: 230px;
-    -moz-transform: translateX(230px);
-    -ms-transform: translateX(230px);
-    -webkit-transform: translateX(230px);
-    transform: translateX(230px);
-  }
-  /* line 437, ../sass/front.scss */
-  .menu a {
-    color: #494949;
-    display: block;
-    height: 40px;
-    text-indent: 5px;
-    line-height: 40px;
-    margin: 0;
-    border-bottom: solid 1px #E2E2E2;
-  }
-  /* line 447, ../sass/front.scss */
-  .menu a span {
-    margin-right: 34px;
-  }
-  /* line 451, ../sass/front.scss */
-  .menu a.active,
-  .menu a:hover {
-    color: #494949;
-    background-color: #E8E8E8;
-  }
-
-  /* line 458, ../sass/front.scss */
-  .menu-profil {
-    min-height: 60px;
-    overflow: hidden;
-    display: block;
-    background-color: #E8E8E8;
-  }
-  /* line 464, ../sass/front.scss */
-  .menu-profil img {
-    width: 40px;
-    float: left;
-    margin: 10px 5px;
-  }
-  /* line 469, ../sass/front.scss */
-  .menu-profil span {
-    width: 125px;
-    font-size: 12px;
-    margin: 10px 0px 5px 0px;
-  }
-
-  /* line 476, ../sass/front.scss */
-  .menu-profil-name {
-    float: left;
-    font-weight: bold;
-    display: inline;
-  }
-
-  /*-----------------------*\
-    $view
-  /*-----------------------*/
-  /* line 486, ../sass/front.scss */
-  .view {
-    top: 0;
   }
 }
