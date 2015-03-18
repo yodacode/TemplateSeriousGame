@@ -11,6 +11,7 @@ $notif-width:250px!default;
 .dropdown-menu {
   border-radius: 5px;
 }
+
 // Navbar
 @media (min-width: 992px) {
   .navbar {
@@ -19,10 +20,33 @@ $notif-width:250px!default;
       height: auto;
       margin-right: 50px;
     }
-    .navbar-nav > li > a, a.navbar-brand  {
+    .navbar-nav > li > a, a.navbar-brand {
       padding-top: 10px;
       padding-bottom: 10px;
       border-radius: 25px;
+    }
+
+    a.btn-notif {
+      width: 40px;
+      height: 40px;
+      line-height: 15px;
+      text-align: center;
+      border-radius: 50%;
+      padding: 0px;
+      margin-left: 40px;
+      font-size: 1.5em;
+      .pills {
+        width: 15px;
+        height: 15px;        
+        line-height: 15px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 0.6em;
+        position: absolute;
+        right: -4px;
+        top: -1px;
+        background: #e02b07;
+      }
     }
   }
 }

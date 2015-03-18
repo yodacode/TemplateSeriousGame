@@ -10,44 +10,68 @@
 }
 
 @media (min-width: 992px) {
-  /* line 16, ../sass/front.scss */
+  /* line 17, ../sass/front.scss */
   .navbar {
     padding: 17px 0px;
   }
-  /* line 18, ../sass/front.scss */
+  /* line 19, ../sass/front.scss */
   .navbar .navbar-brand {
     height: auto;
     margin-right: 50px;
   }
-  /* line 22, ../sass/front.scss */
+  /* line 23, ../sass/front.scss */
   .navbar .navbar-nav > li > a, .navbar a.navbar-brand {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 25px;
   }
+  /* line 29, ../sass/front.scss */
+  .navbar a.btn-notif {
+    width: 40px;
+    height: 40px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0px;
+    margin-left: 40px;
+    font-size: 1.5em;
+  }
+  /* line 38, ../sass/front.scss */
+  .navbar a.btn-notif .pills {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 0.6em;
+    position: absolute;
+    right: -4px;
+    top: -1px;
+    background: #e02b07;
+  }
 }
 /*-------------------------------------------*\
   SITE NOTIF
 /*-------------------------------------------*/
-/* line 33, ../sass/front.scss */
+/* line 57, ../sass/front.scss */
 .site-notif {
   display: none;
 }
 
 @media (min-width: 992px) {
-  /* line 37, ../sass/front.scss */
+  /* line 61, ../sass/front.scss */
   html, body {
     height: 100%;
   }
 
-  /* line 41, ../sass/front.scss */
+  /* line 65, ../sass/front.scss */
   .header {
     position: static;
     left: 0px;
     right: 0px;
   }
 
-  /* line 47, ../sass/front.scss */
+  /* line 71, ../sass/front.scss */
   .site-notif {
     display: block;
     position: absolute;
@@ -67,13 +91,13 @@
     transition-duration: 0.3s;
   }
 
-  /* line 60, ../sass/front.scss */
+  /* line 84, ../sass/front.scss */
   .site-container {
     height: 100%;
     overflow: hidden;
   }
 
-  /* line 65, ../sass/front.scss */
+  /* line 89, ../sass/front.scss */
   .site-pusher {
     height: 100%;
     -moz-transition-duration: 0.3s;
@@ -86,7 +110,7 @@
     transform: translateX(0px);
   }
 
-  /* line 71, ../sass/front.scss */
+  /* line 95, ../sass/front.scss */
   .site-content {
     position: absolute;
     overflow-y: scroll;
@@ -97,14 +121,14 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  /* line 82, ../sass/front.scss */
+  /* line 106, ../sass/front.scss */
   .site-with-notif .site-pusher {
     -moz-transform: translateX(-250px);
     -ms-transform: translateX(-250px);
     -webkit-transform: translateX(-250px);
     transform: translateX(-250px);
   }
-  /* line 85, ../sass/front.scss */
+  /* line 109, ../sass/front.scss */
   .site-with-notif .site-cache {
     position: absolute;
     left: 0;
