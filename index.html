@@ -44,7 +44,7 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-              <li class="hidden-xs"><img src="http://placehold.it/35x35" alt="avatar" class="img-circle img-thumbnail"/></li>
+              <li class="hidden-xs hidden-sm"><img src="http://placehold.it/35x35" alt="avatar" class="img-circle img-thumbnail"/></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Benjamin de Vaublanc <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -78,7 +78,7 @@
     </header>
 
     <div class="site-content">
-      <section class="wizard" data-wizard data-step="3" style="background-image: url('images/bg-wizard');">
+      <section class="wizard" data-wizard data-step="2" style="background-image: url('images/bg-wizard');">
         <section class="wizard-container">
             <div class="container">
               <div class="wizard-progress-bar">
@@ -131,482 +131,478 @@
         </section>
       </section>
 
-      <section class="container">
+      <section class="container-fluid">
 
+        <section class="main col-md-9">
 
-
-      <section class="main col-md-8">
-
-        <section class="panel panel-default widget widget-pitch" data-widget-pitch>
-          <section class="panel-heading"><h2><span class="icon-referee"></span> Le pitch</h2></section>
-          <section class="panel-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br><br>
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <section class="panel panel-default widget widget-pitch" data-widget-pitch>
+            <section class="panel-heading"><h2><span class="icon-referee"></span> Le pitch</h2></section>
+            <section class="panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br><br>
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </section>
           </section>
-        </section>
 
 
 
-          <section class="feed">
-
-            <h2 class="text-center feed-title"><span class="icon-feed"></span> Le flux</h2>
-            <div class="feed-header">
-                <button class="btn btn-default btn-danger btn-thinder"><i class="icon-magic-wand"></i> J'ai de la chance</button>
-                <div class="dropdown clearfix ">
-                  <button class="btn btn-default dropdown-toggle btn-filter" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="true">
-                    Filtrer
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
-                    <li class="dropdown-header">Filtres</li>
-                    <li><a href="#">Les dernières mise à jour</a></li>
-                    <li><a href="#">Les plus likées</a></li>
-                    <li><a href="#">Les plus commentées</a></li>
-                    <li><a href="#">Les plus récentes</a></li>
-                  </ul>
-                </div>
-            </div>
-
-            <article class="idea feed-item">
-              <div class="idea-avatar">
-                <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+            <section class="feed">              
+              <div class="feed-header">
+                  <button class="btn btn-default btn-danger btn-thinder"><i class="icon-magic-wand"></i> J'ai de la chance</button>
+                  <div class="dropdown clearfix ">
+                    <button class="btn btn-default dropdown-toggle btn-filter" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="true">
+                      Filtrer
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+                      <li class="dropdown-header">Filtres</li>
+                      <li><a href="#">Les dernières mise à jour</a></li>
+                      <li><a href="#">Les plus likées</a></li>
+                      <li><a href="#">Les plus commentées</a></li>
+                      <li><a href="#">Les plus récentes</a></li>
+                    </ul>
+                  </div>
               </div>
-              <div class="idea-theme">
-                Theme
-              </div>
-              <figure class="idea-picture">
-                <img src="images/default-idea-picture.png" alt="idea picture" />
-              </figure>
-              <div class="idea-author">
-                by Ofer Attali
-              </div>
-              <div class="idea-gems">
-                <div class="gems-score">3489734</div>
-                <div class="circle">
-                  <div class="circle-content"><i class="icon-precious icon-bordered red"></i></div>
-                </div>
-              </div>
-              <section class="idea-description">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                </p>
-                <span class="label label-default">Connected</span> <span class="label label-default">Innovation</span>
-              </section>
 
-              <section class="votes">
-                <section class="votes-content">
-                  <section class="votes-up">
-                   <a href="#"><span data-votes-up>321</span> <i class="glyphicon glyphicon-thumbs-up"></i></a>
-                  </section>
-                  <section class="votes-down">
-                   <a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> <span data-votes-up>42342</span></a>
-                  </section>
-                  <section class="votes-progress-bar">
-                    <section class="votes-progress">
-                    </section>
-                  </section>
-                </section>
-              </section>
-            </article><!-- .idea -->
+              <section class="feed-list row" data-feed-list data-feed>
 
-            <article class="idea feed-item">
-              <div class="idea-avatar">
-                <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
-              </div>
-              <div class="idea-theme">
-                Theme
-              </div>
-              <figure class="idea-picture">
-                <img src="images/default-idea-picture.png" alt="idea picture" />
-              </figure>
-              <div class="idea-author">
-                by Ofer Attali
-              </div>
-              <div class="idea-gems">
-                <div class="gems-score">3489734</div>
-                <div class="circle">
-                  <div class="circle-content"><i class="icon-precious icon-bordered red"></i></div>
-                </div>
-              </div>
-              <section class="idea-description">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                </p>
-                <span class="label label-default">Connected</span> <span class="label label-default">Innovation</span>
-              </section>
-
-              <section class="votes">
-                <section class="votes-content">
-                  <section class="votes-up">
-                   <a href="#"><span data-votes-up>321</span> <i class="glyphicon glyphicon-thumbs-up"></i></a>
-                  </section>
-                  <section class="votes-down">
-                   <a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> <span data-votes-up>42342</span></a>
-                  </section>
-                  <section class="votes-progress-bar">
-                    <section class="votes-progress">
-                    </section>
-                  </section>
-                </section>
-              </section>
-            </article><!-- .idea -->
-
-
-            <article class="idea feed-item">
-              <div class="idea-avatar">
-                <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
-              </div>
-              <div class="idea-theme">
-                Theme
-              </div>
-              <figure class="idea-picture">
-                <img src="images/default-idea-picture.png" alt="idea picture" />
-              </figure>
-              <div class="idea-author">
-                by Ofer Attali
-              </div>
-              <div class="idea-gems">
-                <div class="gems-score">3489734</div>
-                <div class="circle">
-                  <div class="circle-content"><i class="icon-precious icon-bordered red"></i></div>
-                </div>
-              </div>
-              <section class="idea-description">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                </p>
-                <span class="label label-default">Connected</span> <span class="label label-default">Innovation</span>
-              </section>
-
-              <section class="votes">
-                <section class="votes-content">
-                  <section class="votes-up">
-                   <a href="#"><span data-votes-up>321</span> <i class="glyphicon glyphicon-thumbs-up"></i></a>
-                  </section>
-                  <section class="votes-down">
-                   <a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> <span data-votes-up>42342</span></a>
-                  </section>
-                  <section class="votes-progress-bar">
-                    <section class="votes-progress">
-                    </section>
-                  </section>
-                </section>
-              </section>
-            </article><!-- .idea -->
-
-            <article class="idea feed-item">
-              <div class="idea-avatar">
-                <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
-              </div>
-              <div class="idea-theme">
-                Theme
-              </div>
-              <figure class="idea-picture">
-                <img src="images/default-idea-picture.png" alt="idea picture" />
-              </figure>
-              <div class="idea-author">
-                by Ofer Attali
-              </div>
-              <div class="idea-gems">
-                <div class="gems-score">3489734</div>
-                <div class="circle">
-                  <div class="circle-content"><i class="icon-precious icon-bordered red"></i></div>
-                </div>
-              </div>
-              <section class="idea-description">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                </p>
-                <span class="label label-default">Connected</span> <span class="label label-default">Innovation</span>
-              </section>
-
-              <section class="votes">
-                <section class="votes-content">
-                  <section class="votes-up">
-                   <a href="#"><span data-votes-up>321</span> <i class="glyphicon glyphicon-thumbs-up"></i></a>
-                  </section>
-                  <section class="votes-down">
-                   <a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> <span data-votes-up>42342</span></a>
-                  </section>
-                  <section class="votes-progress-bar">
-                    <section class="votes-progress">
-                    </section>
-                  </section>
-                </section>
-              </section>
-            </article><!-- .idea -->
-
-            <article class="idea feed-item">
-              <div class="idea-avatar">
-                <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
-              </div>
-              <div class="idea-theme">
-                Theme
-              </div>
-              <figure class="idea-picture">
-                <img src="images/default-idea-picture.png" alt="idea picture" />
-              </figure>
-              <div class="idea-author">
-                by Ofer Attali
-              </div>
-              <div class="idea-gems">
-                <div class="gems-score">3489734</div>
-                <div class="circle">
-                  <div class="circle-content"><i class="icon-precious icon-bordered red"></i></div>
-                </div>
-              </div>
-              <section class="idea-description">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                </p>
-                <span class="label label-default">Connected</span> <span class="label label-default">Innovation</span>
-              </section>
-
-              <section class="votes">
-                <section class="votes-content">
-                  <section class="votes-up">
-                   <a href="#"><span data-votes-up>321</span> <i class="glyphicon glyphicon-thumbs-up"></i></a>
-                  </section>
-                  <section class="votes-down">
-                   <a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> <span data-votes-up>42342</span></a>
-                  </section>
-                  <section class="votes-progress-bar">
-                    <section class="votes-progress">
-                    </section>
-                  </section>
-                </section>
-              </section>
-            </article><!-- .idea -->
-
-            <article class="idea feed-item">
-              <div class="idea-avatar">
-                <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
-              </div>
-              <div class="idea-theme">
-                Theme
-              </div>
-              <figure class="idea-picture">
-                <img src="images/default-idea-picture.png" alt="idea picture" />
-              </figure>
-              <div class="idea-author">
-                by Ofer Attali
-              </div>
-              <div class="idea-gems">
-                <div class="gems-score">3489734</div>
-                <div class="circle">
-                  <div class="circle-content"><i class="icon-precious icon-bordered red"></i></div>
-                </div>
-              </div>
-              <section class="idea-description">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                </p>
-                <span class="label label-default">Connected</span> <span class="label label-default">Innovation</span>
-              </section>
-
-              <section class="votes">
-                <section class="votes-content">
-                  <section class="votes-up">
-                   <a href="#"><span data-votes-up>321</span> <i class="glyphicon glyphicon-thumbs-up"></i></a>
-                  </section>
-                  <section class="votes-down">
-                   <a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> <span data-votes-up>42342</span></a>
-                  </section>
-                  <section class="votes-progress-bar">
-                    <section class="votes-progress">
-                    </section>
-                  </section>
-                </section>
-              </section>
-            </article><!-- .idea -->
-
-
-
-          </section><!-- .feed -->
-
-      </section><!-- .main -->
-
-      <aside class="sidebar col-md-4">
-          <section class="panel panel-primary widget widget-remaning" data-widget-remaining>
-            <section class="panel-heading"><h4><i class="icon-clock"></i> Temps restants</h4></section>
-            <section class="panel-body">
-
-            </section>
-          </section><!-- .widget-remaining -->
-
-          <section class="panel panel-default widget widget-tips" data-widget-tips>
-            <section class="panel-heading"><h4><i class="icon-wink"></i> Trucs & astuces</h4></section>
-            <section class="panel-body">
-            </section>
-          </section><!-- .widget-tips -->
-
-          <section class="panel panel-primary widget widget-user-ranking" data-widget-user-ranking>
-            <section class="panel-heading"><h4><i class="icon-game42"></i> Ma position dans le classement</h4></section>
-            <section class="panel-body">
-              <section class="widget-scroll">
-
-                <section class="user">
-                  <section class="user-avatar">
+                <article class="idea feed-item col-md-4" data-feed-item>
+                  <div class="idea-avatar">
                     <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
-                  </section>
-                  <section class="user-content">
-                    <section class="user-username"><a href="#">Etienne Datcharry</a></section>
-                    <section class="user-gems">
-                      <i class="icon-precious icon-bordered red"></i> 231 gems
-                    </section>
-                  </section>
-                  <section class="user-rank">place 42</section>
-                </section>
-
-                <section class="user">
-                  <section class="user-avatar">
-                    <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
-                  </section>
-                  <section class="user-content">
-                    <section class="user-username"><a href="#">Etienne Datcharry</a></section>
-                    <section class="user-gems">
-                      <i class="icon-precious icon-bordered red"></i> 231 gems
-                    </section>
-                  </section>
-                  <section class="user-rank">place 42</section>
-                </section>
-
-                <section class="user">
-                  <section class="user-avatar">
-                    <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
-                  </section>
-                  <section class="user-content">
-                    <section class="user-username"><a href="#">Etienne Datcharry</a></section>
-                    <section class="user-gems">
-                      <i class="icon-precious icon-bordered red"></i> 231 gems
-                    </section>
-                  </section>
-                  <section class="user-rank">place 42</section>
-                </section>
-
-                <section class="user">
-                  <section class="user-avatar">
-                    <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
-                  </section>
-                  <section class="user-content">
-                    <section class="user-username"><a href="#">Etienne Datcharry</a></section>
-                    <section class="user-gems">
-                      <i class="icon-precious icon-bordered red"></i> 231 gems
-                    </section>
-                  </section>
-                  <section class="user-rank">place 42</section>
-                </section>
-
-              </section>
-            </section>
-          </section><!-- .widget-ranking -->
-
-          <section class="panel panel-primary widget widget-ideas-last" data-widget-ideas-last>
-            <section class="panel-heading"><h4><i class="icon-game42"></i> Ma position dans le classement</h4></section>
-            <section class="panel-body">
-              <section class="widget-scroll">
-
-                <section class="user">
-                  <section class="user-avatar">
-                    <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
-                  </section>
-                  <section class="user-content">
-                    <section class="user-username"><a href="#">Etienne Datcharry</a></section>
-                    <section class="user-gems">
-                      <i class="icon-precious icon-bordered red"></i> 231 gems
-                    </section>
-                  </section>
-                  <section class="user-date">12/10/2015</section>
-                  <section class="user-ideas">
+                  </div>
+                  <div class="idea-theme">
+                    Theme
+                  </div>
+                  <figure class="idea-picture">
+                    <img src="images/default-idea-picture.png" alt="idea picture" />
+                  </figure>
+                  <div class="idea-author">
+                    by Ofer Attali
+                  </div>
+                  <div class="idea-gems">
+                    <div class="gems-score">3489734</div>
+                    <div class="circle">
+                      <div class="circle-content"><i class="icon-precious icon-bordered red"></i></div>
+                    </div>
+                  </div>
+                  <section class="idea-description">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua...
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     </p>
-                    <a href="" class="btn btn-default">Découvrir</a>
+                    <span class="label label-default">Connected</span> <span class="label label-default">Innovation</span>
                   </section>
-                </section>
 
-                <section class="user">
-                  <section class="user-avatar">
-                    <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
-                  </section>
-                  <section class="user-content">
-                    <section class="user-username"><a href="#">Etienne Datcharry</a></section>
-                    <section class="user-gems">
-                      <i class="icon-precious icon-bordered red"></i> 231 gems
+                  <section class="votes">
+                    <section class="votes-content">
+                      <section class="votes-up">
+                       <a href="#"><span data-votes-up>321</span> <i class="glyphicon glyphicon-thumbs-up"></i></a>
+                      </section>
+                      <section class="votes-down">
+                       <a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> <span data-votes-up>42342</span></a>
+                      </section>
+                      <section class="votes-progress-bar">
+                        <section class="votes-progress">
+                        </section>
+                      </section>
                     </section>
                   </section>
-                  <section class="user-date">12/10/2015</section>
-                  <section class="user-ideas">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua...
-                    </p>
-                    <a href="" class="btn btn-default">Découvrir</a>
-                  </section>
-                </section>
+                </article><!-- .idea -->
 
-                <section class="user">
-                  <section class="user-avatar">
+                <article class="idea feed-item col-md-4" data-feed-item>
+                  <div class="idea-avatar">
                     <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                  </div>
+                  <div class="idea-theme">
+                    Theme
+                  </div>
+                  <figure class="idea-picture">
+                    <img src="images/default-idea-picture.png" alt="idea picture" />
+                  </figure>
+                  <div class="idea-author">
+                    by Ofer Attali
+                  </div>
+                  <div class="idea-gems">
+                    <div class="gems-score">3489734</div>
+                    <div class="circle">
+                      <div class="circle-content"><i class="icon-precious icon-bordered red"></i></div>
+                    </div>
+                  </div>
+                  <section class="idea-description">
+                    <p>
+                      Lorem ipsum dolor dolore magna aliqua. Ut enim ad minim veniam,<br><br>
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                    <span class="label label-default">Connected</span> <span class="label label-default">Innovation</span>
                   </section>
-                  <section class="user-content">
-                    <section class="user-username"><a href="#">Etienne Datcharry</a></section>
-                    <section class="user-gems">
-                      <i class="icon-precious icon-bordered red"></i> 231 gems
+
+                  <section class="votes">
+                    <section class="votes-content">
+                      <section class="votes-up">
+                       <a href="#"><span data-votes-up>321</span> <i class="glyphicon glyphicon-thumbs-up"></i></a>
+                      </section>
+                      <section class="votes-down">
+                       <a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> <span data-votes-up>42342</span></a>
+                      </section>
+                      <section class="votes-progress-bar">
+                        <section class="votes-progress">
+                        </section>
+                      </section>
                     </section>
                   </section>
-                  <section class="user-date">12/10/2015</section>
-                  <section class="user-ideas">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua...
-                    </p>
-                    <a href="" class="btn btn-default">Découvrir</a>
-                  </section>
-                </section>
+                </article><!-- .idea -->
 
-                <section class="user">
-                  <section class="user-avatar">
+
+                <article class="idea feed-item col-md-4" data-feed-item>
+                  <div class="idea-avatar">
                     <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                  </div>
+                  <div class="idea-theme">
+                    Theme
+                  </div>
+                  <figure class="idea-picture">
+                    <img src="images/default-idea-picture.png" alt="idea picture" />
+                  </figure>
+                  <div class="idea-author">
+                    by Ofer Attali
+                  </div>
+                  <div class="idea-gems">
+                    <div class="gems-score">3489734</div>
+                    <div class="circle">
+                      <div class="circle-content"><i class="icon-precious icon-bordered red"></i></div>
+                    </div>
+                  </div>
+                  <section class="idea-description">
+                    <p>
+                      iqua. Ut enim ad minim veniam,<br><br>
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                    <span class="label label-default">Connected</span> <span class="label label-default">Innovation</span>
                   </section>
-                  <section class="user-content">
-                    <section class="user-username"><a href="#">Etienne Datcharry</a></section>
-                    <section class="user-gems">
-                      <i class="icon-precious icon-bordered red"></i> 231 gems
+
+                  <section class="votes">
+                    <section class="votes-content">
+                      <section class="votes-up">
+                       <a href="#"><span data-votes-up>321</span> <i class="glyphicon glyphicon-thumbs-up"></i></a>
+                      </section>
+                      <section class="votes-down">
+                       <a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> <span data-votes-up>42342</span></a>
+                      </section>
+                      <section class="votes-progress-bar">
+                        <section class="votes-progress">
+                        </section>
+                      </section>
                     </section>
                   </section>
-                  <section class="user-date">12/10/2015</section>
-                  <section class="user-ideas">
+                </article><!-- .idea -->
+
+                <article class="idea feed-item col-md-4" data-feed-item>
+                  <div class="idea-avatar">
+                    <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                  </div>
+                  <div class="idea-theme">
+                    Theme
+                  </div>
+                  <figure class="idea-picture">
+                    <img src="images/default-idea-picture.png" alt="idea picture" />
+                  </figure>
+                  <div class="idea-author">
+                    by Ofer Attali
+                  </div>
+                  <div class="idea-gems">
+                    <div class="gems-score">3489734</div>
+                    <div class="circle">
+                      <div class="circle-content"><i class="icon-precious icon-bordered red"></i></div>
+                    </div>
+                  </div>
+                  <section class="idea-description">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua...
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     </p>
-                    <a href="" class="btn btn-default">Découvrir</a>
+                    <span class="label label-default">Connected</span> <span class="label label-default">Innovation</span>
                   </section>
-                </section>             
+
+                  <section class="votes">
+                    <section class="votes-content">
+                      <section class="votes-up">
+                       <a href="#"><span data-votes-up>321</span> <i class="glyphicon glyphicon-thumbs-up"></i></a>
+                      </section>
+                      <section class="votes-down">
+                       <a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> <span data-votes-up>42342</span></a>
+                      </section>
+                      <section class="votes-progress-bar">
+                        <section class="votes-progress">
+                        </section>
+                      </section>
+                    </section>
+                  </section>
+                </article><!-- .idea -->
+
+                <article class="idea feed-item col-md-4" data-feed-item>
+                  <div class="idea-avatar">
+                    <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                  </div>
+                  <div class="idea-theme">
+                    Theme
+                  </div>
+                  <figure class="idea-picture">
+                    <img src="images/default-idea-picture.png" alt="idea picture" />
+                  </figure>
+                  <div class="idea-author">
+                    by Ofer Attali
+                  </div>
+                  <div class="idea-gems">
+                    <div class="gems-score">3489734</div>
+                    <div class="circle">
+                      <div class="circle-content"><i class="icon-precious icon-bordered red"></i></div>
+                    </div>
+                  </div>
+                  <section class="idea-description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                    <span class="label label-default">Connected</span> <span class="label label-default">Innovation</span>
+                  </section>
+
+                  <section class="votes">
+                    <section class="votes-content">
+                      <section class="votes-up">
+                       <a href="#"><span data-votes-up>321</span> <i class="glyphicon glyphicon-thumbs-up"></i></a>
+                      </section>
+                      <section class="votes-down">
+                       <a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> <span data-votes-up>42342</span></a>
+                      </section>
+                      <section class="votes-progress-bar">
+                        <section class="votes-progress">
+                        </section>
+                      </section>
+                    </section>
+                  </section>
+                </article><!-- .idea -->
+
+                <article class="idea feed-item col-md-4" data-feed-item>
+                  <div class="idea-avatar">
+                    <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                  </div>
+                  <div class="idea-theme">
+                    Theme
+                  </div>
+                  <figure class="idea-picture">
+                    <img src="images/default-idea-picture.png" alt="idea picture" />
+                  </figure>
+                  <div class="idea-author">
+                    by Ofer Attali
+                  </div>
+                  <div class="idea-gems">
+                    <div class="gems-score">3489734</div>
+                    <div class="circle">
+                      <div class="circle-content"><i class="icon-precious icon-bordered red"></i></div>
+                    </div>
+                  </div>
+                  <section class="idea-description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                    <span class="label label-default">Connected</span> <span class="label label-default">Innovation</span>
+                  </section>
+
+                  <section class="votes">
+                    <section class="votes-content">
+                      <section class="votes-up">
+                       <a href="#"><span data-votes-up>321</span> <i class="glyphicon glyphicon-thumbs-up"></i></a>
+                      </section>
+                      <section class="votes-down">
+                       <a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> <span data-votes-up>42342</span></a>
+                      </section>
+                      <section class="votes-progress-bar">
+                        <section class="votes-progress">
+                        </section>
+                      </section>
+                    </section>
+                  </section>
+                </article><!-- .idea -->
 
               </section>
-            </section>
-          </section><!-- .widget-ideas-last -->
-      </aside><!-- .sidebar -->  
 
+
+            </section><!-- .feed -->
+        </section><!-- .main -->
+
+        <aside class="sidebar col-md-3">
+            <section class="panel panel-primary widget widget-remaning" data-widget-remaining>
+              <section class="panel-heading"><h4><i class="icon-clock"></i> Temps restants</h4></section>
+              <section class="panel-body">
+              <div class="widget-remaining-progress" data-widget-remaining-progress></div>
+              </section>
+            </section><!-- .widget-remaining -->
+
+            <section class="panel panel-default widget widget-tips" data-widget-tips>
+              <section class="panel-heading"><h4><i class="icon-wink"></i> Trucs & astuces</h4></section>
+              <section class="panel-body">
+              </section>
+            </section><!-- .widget-tips -->
+
+            <section class="panel panel-primary widget widget-user-ranking" data-widget-user-ranking>
+              <section class="panel-heading"><h4><i class="icon-game42"></i> Ma position dans le classement</h4></section>
+              <section class="panel-body">
+                <section class="widget-scroll">
+
+                  <section class="user">
+                    <section class="user-avatar">
+                      <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                    </section>
+                    <section class="user-content">
+                      <section class="user-username"><a href="#">Etienne Datcharry</a></section>
+                      <section class="user-gems">
+                        <i class="icon-precious icon-bordered red"></i> 231 gems
+                      </section>
+                    </section>
+                    <section class="user-rank">place 42</section>
+                  </section>
+
+                  <section class="user">
+                    <section class="user-avatar">
+                      <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                    </section>
+                    <section class="user-content">
+                      <section class="user-username"><a href="#">Etienne Datcharry</a></section>
+                      <section class="user-gems">
+                        <i class="icon-precious icon-bordered red"></i> 231 gems
+                      </section>
+                    </section>
+                    <section class="user-rank">place 42</section>
+                  </section>
+
+                  <section class="user">
+                    <section class="user-avatar">
+                      <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                    </section>
+                    <section class="user-content">
+                      <section class="user-username"><a href="#">Etienne Datcharry</a></section>
+                      <section class="user-gems">
+                        <i class="icon-precious icon-bordered red"></i> 231 gems
+                      </section>
+                    </section>
+                    <section class="user-rank">place 42</section>
+                  </section>
+
+                  <section class="user">
+                    <section class="user-avatar">
+                      <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                    </section>
+                    <section class="user-content">
+                      <section class="user-username"><a href="#">Etienne Datcharry</a></section>
+                      <section class="user-gems">
+                        <i class="icon-precious icon-bordered red"></i> 231 gems
+                      </section>
+                    </section>
+                    <section class="user-rank">place 42</section>
+                  </section>
+
+                </section>
+              </section>
+            </section><!-- .widget-ranking -->
+
+            <section class="panel panel-primary widget widget-ideas-last" data-widget-ideas-last>
+              <section class="panel-heading"><h4><i class="icon-game42"></i> Ma position dans le classement</h4></section>
+              <section class="panel-body">
+                <section class="widget-scroll">
+
+                  <section class="user">
+                    <section class="user-avatar">
+                      <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                    </section>
+                    <section class="user-content">
+                      <section class="user-username"><a href="#">Etienne Datcharry</a></section>
+                      <section class="user-gems">
+                        <i class="icon-precious icon-bordered red"></i> 231 gems
+                      </section>
+                    </section>
+                    <section class="user-date">12/10/2015</section>
+                    <section class="user-ideas">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua...
+                      </p>
+                      <a href="" class="btn btn-default">Découvrir</a>
+                    </section>
+                  </section>
+
+                  <section class="user">
+                    <section class="user-avatar">
+                      <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                    </section>
+                    <section class="user-content">
+                      <section class="user-username"><a href="#">Etienne Datcharry</a></section>
+                      <section class="user-gems">
+                        <i class="icon-precious icon-bordered red"></i> 231 gems
+                      </section>
+                    </section>
+                    <section class="user-date">12/10/2015</section>
+                    <section class="user-ideas">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua...
+                      </p>
+                      <a href="" class="btn btn-default">Découvrir</a>
+                    </section>
+                  </section>
+
+                  <section class="user">
+                    <section class="user-avatar">
+                      <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                    </section>
+                    <section class="user-content">
+                      <section class="user-username"><a href="#">Etienne Datcharry</a></section>
+                      <section class="user-gems">
+                        <i class="icon-precious icon-bordered red"></i> 231 gems
+                      </section>
+                    </section>
+                    <section class="user-date">12/10/2015</section>
+                    <section class="user-ideas">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua...
+                      </p>
+                      <a href="" class="btn btn-default">Découvrir</a>
+                    </section>
+                  </section>
+
+                  <section class="user">
+                    <section class="user-avatar">
+                      <img src="http://placehold.it/50x50" alt="avatar" class="img-circle img-thumbnail">
+                    </section>
+                    <section class="user-content">
+                      <section class="user-username"><a href="#">Etienne Datcharry</a></section>
+                      <section class="user-gems">
+                        <i class="icon-precious icon-bordered red"></i> 231 gems
+                      </section>
+                    </section>
+                    <section class="user-date">12/10/2015</section>
+                    <section class="user-ideas">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua...
+                      </p>
+                      <a href="" class="btn btn-default">Découvrir</a>
+                    </section>
+                  </section>             
+
+                </section>
+              </section>
+            </section><!-- .widget-ideas-last -->
+        </aside><!-- .sidebar -->  
 
       </section>
 

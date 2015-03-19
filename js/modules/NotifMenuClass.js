@@ -1,7 +1,7 @@
 // dependencies
-$ = require('jquery');
+var $ = require('jquery');
 
-var NotifMenu = function () {
+var NotifMenuClass = function () {
 
 	this.btnNotif = $('[data-btn-notif]');
 	this.cache = $('[data-site-cache]');
@@ -19,6 +19,6 @@ var NotifMenu = function () {
            that.body.removeClass('site-with-notif');
         });
     };
-}
+};
 
-module.exports = NotifMenu;
+module.exports = NotifMenuClass;
