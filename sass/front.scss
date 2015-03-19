@@ -7,12 +7,15 @@ $notif-width:250px !default;
 $color-primary: #1a85d1;
 $color-primary-dark: darken($color-primary, 5%);
 $color-success: #78c800;
+$color-danger: #e02b07;
+$color-dark: #4e4d4e;
+$color-light: #9d9d9d;
 
 
 /*-------------------------------------------*\
   MIXINS
 /*-------------------------------------------*/
-@mixin circle($filled) {
+@mixin circle($filled, $colorOut, $colorIn) {
   position: relative;
   width: 80px;
   height: 80px;
@@ -23,7 +26,7 @@ $color-success: #78c800;
     width: 62px;
     height: 62px;
     font-size: 3.6em;
-    background: #FFF;
+    background: $colorIn;
     border-radius: 48px;
     position: absolute;
     top: -1px;
@@ -43,18 +46,18 @@ $color-success: #78c800;
     line-height: 21px;
     font-weight: bold;
     border-radius: 50%;
-    color: $color-success;
+    color: $colorOut;
   }
 
   @if $filled == 'full' {
-    border: 10px solid $color-success;
+    border: 10px solid $colorOut;
     .circle-pills {
-      background: $color-success;
+      background: $colorOut;
       color: #FFF;
     }
   }
   @if $filled == 'half' {
-    border: 10px solid $color-success;
+    border: 10px solid $colorOut;
     -webkit-transform:rotate(-45deg);
     border-right: 10px solid white;
     border-bottom: 10px solid white;
@@ -70,6 +73,14 @@ $color-success: #78c800;
 /*-------------------------------------------*\
   GLOBAL
 /*-------------------------------------------*/
+.overflow {
+  overflow: hidden;
+}
+
+.clearfix {
+  clear: both;
+}
+
 .icon-bordered {
   font-size: 1.9em;
   vertical-align: middle;
@@ -78,7 +89,6 @@ $color-success: #78c800;
   &.red {
     color: #e02b07;
   }
-
 }
 
 /*-------------------------------------------*\
@@ -90,6 +100,18 @@ $color-success: #78c800;
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #FFF;
+}
+
+.panel-heading {
+  h1,h2,h3,h4 {
+    margin: 0px;
+  }
+}
+
+.panel-default>.panel-heading {
+  color: #FFF;
+  background-color: #333333;
+  border-color: #ddd;
 }
 
 /////////////////// Navbar ////////////////////
@@ -216,6 +238,7 @@ $color-success: #78c800;
 
 @media (max-width: 768px) {
   .wizard {
+    min-height: 0px !important;
     .wizard-paragraph {
       font-size: 0.5em;
     }
@@ -223,7 +246,9 @@ $color-success: #78c800;
 }
 .wizard {
   min-height: 300px;
-  background-size: cover;
+  background-size: cover;  
+  margin-bottom: 15px;
+  
   .wizard-container {
     background-color: rgba(26, 133, 209, 0.8);
     min-height: 145px;
@@ -267,17 +292,17 @@ $color-success: #78c800;
   &[data-step="1"] {
     .wizard-step1 {
       .circle {
-        @include circle('half');
+        @include circle('half', $color-success, #FFF);
       }
     }
     .wizard-step2 {
       .circle {
-        @include circle('empty');
+        @include circle('empty', $color-success, #FFF);
       }
     }
     .wizard-step3 {
       .circle {
-        @include circle('empty');
+        @include circle('empty', $color-success, #FFF);
       }
     }
     .wizard-progress {
@@ -288,17 +313,17 @@ $color-success: #78c800;
   &[data-step="2"] {
     .wizard-step1 {
       .circle {
-        @include circle('full');
+        @include circle('full', $color-success, #FFF);
       }
     }
     .wizard-step2 {
       .circle {
-        @include circle('half');
+        @include circle('half', $color-success, #FFF);
       }
     }
     .wizard-step3 {
       .circle {
-        @include circle('empty');
+        @include circle('empty', $color-success, #FFF);
       }
     }
     .wizard-progress {
@@ -309,17 +334,17 @@ $color-success: #78c800;
   &[data-step="3"] {
     .wizard-step1 {
       .circle {
-        @include circle('full');
+        @include circle('full', $color-success, #FFF);
       }
     }
     .wizard-step2 {
       .circle {
-        @include circle('full');
+        @include circle('full', $color-success, #FFF);
       }
     }
     .wizard-step3 {
       .circle {
-        @include circle('half');
+        @include circle('half', $color-success, #FFF);
       }
     }
     .wizard-progress {
@@ -327,5 +352,206 @@ $color-success: #78c800;
     }
   }
 
+}
 
+/*-------------------------------------------*\
+  FEED
+/*-------------------------------------------*/
+.feed {
+  margin-bottom: 30px;
+  .feed-title {
+    background: #FFF;
+    padding: 12px 0px;
+  }
+  .feed-header {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 30px;
+    .btn-thinder {
+      position: absolute;
+      right: 0px;
+    }
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .feed {    
+    .btn-thinder, .btn-filter {
+      display: block;
+      width: 100%;
+      position: static !important;
+      margin-bottom: 7px;
+    }
+  }
+}
+/*-------------------------------------------*\
+  VOTES
+/*-------------------------------------------*/
+.votes {
+  width: 100%;
+  .votes-content {
+    position: relative;
+  }
+  .votes-progress-bar {
+    background: #78c800;
+    height: 10px;
+    width: 100%;
+  }
+  .votes-up, .votes-down {
+    position: absolute;
+    top: -18px;
+    a {
+      color: $color-dark;
+    }
+  }
+  .votes-up {
+    right: 5px;
+  }
+  .votes-down {
+    left: 5px;
+  }
+  .votes-progress {
+    background: #e02b07;
+    width: 70%;
+    height: 100%;
+  }
+}
+/*-------------------------------------------*\
+  IDEA
+/*-------------------------------------------*/
+.idea {
+  width: 280px;
+  background: #FFF;
+  min-height: 400px;
+  border: solid 1px #d7d7d7;
+  border-radius: 5px;
+  position: relative;
+
+  .idea-picture {
+    max-height: 151px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+
+  .idea-theme {
+    position: absolute;
+    left: -7px;
+    top: 12px;
+    background: $color-dark;
+    color: #FFF;
+    padding: 7px 10px;
+  }
+
+  .idea-avatar {
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .idea-author {
+    width: 90%;
+    margin: 15px 0px 15px 5%;
+    color: $color-light;
+  }
+
+  .idea-gems {
+    position: absolute;
+    right: -20px;
+    top: 115px;
+
+    .gems-score {
+      position: absolute;
+      left: -75px;
+      top: 40px;
+      color: $color-danger;    
+      font-size: 1.2em;
+      z-index: 2;
+    }
+
+    .circle {
+      @include circle('full', #FFF, $color-danger);
+      .circle-content {
+        font-size: 1.6em;        
+      }
+    }
+  }
+
+  .idea-description {
+    width: 90%;
+    margin: 15px 5% 15px 5%;
+    p {
+      margin-bottom: 15px;
+    }
+  }
+  .votes {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+/*-------------------------------------------*\
+  USER
+/*-------------------------------------------*/
+.user {
+  display: block;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #ddd;
+
+  .user-avatar {
+    padding: 0px;
+    display: inline-block;
+    width: 20%;    
+  }
+  .user-content {
+    width: 75%;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 3px;    
+  }
+
+  .user-username {
+    margin-bottom: 3px;
+    a {
+      color: $color-dark;
+    }
+  }
+
+  .user-gems {
+    color: $color-danger;
+  }
+
+  .user-rank, .user-date {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    color: $color-light;
+  }
+
+  .user-ideas {
+    margin-top: 7px;
+    text-align: center;
+    p {
+      text-align: left;
+    }
+    .btn {
+      margin: 0 auto;
+
+    }
+  }
+}
+/*-------------------------------------------*\
+  WIDGET
+/*-------------------------------------------*/
+.widget {
+  .widget-scroll {
+    max-height: 250px;
+    overflow-y: scroll;
+  }
 }

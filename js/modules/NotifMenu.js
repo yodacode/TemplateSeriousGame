@@ -7,7 +7,7 @@ var NotifMenu = function () {
 	this.cache = $('[data-site-cache]');
 	this.body = $('body');
 
-    NotifMenu.prototype.init = function () {
+    this.init = function () {
     	var that = this;
 
         this.btnNotif.on('click', function(e){
@@ -18,7 +18,7 @@ var NotifMenu = function () {
         this.cache.on('click', function(e){
            that.body.removeClass('site-with-notif');
         });
-    }
+    };
 }
 
 module.exports = NotifMenu;
