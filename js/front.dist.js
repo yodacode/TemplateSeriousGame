@@ -1,13 +1,13 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/benjamin/Sites/TemplateIdeaPro/js/front.js":[function(require,module,exports){
-// dependencies
+// Dependancies
 window.jQuery = $ = require('jquery');
 var bootstrap = require('bootstrap');
 
 // Modules
 var NotifMenu = require('./modules/NotifMenu.js');
 
-
-
+// Init Modules
+new NotifMenu().init();
 },{"./modules/NotifMenu.js":"/Users/benjamin/Sites/TemplateIdeaPro/js/modules/NotifMenu.js","bootstrap":"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/bootstrap/dist/js/npm.js","jquery":"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/jquery/dist/jquery.js"}],"/Users/benjamin/Sites/TemplateIdeaPro/js/modules/NotifMenu.js":[function(require,module,exports){
 // dependencies
 $ = require('jquery');
@@ -31,8 +31,6 @@ var NotifMenu = function () {
         });
     }
 }
-
-var n = new NotifMenu().init();
 
 module.exports = NotifMenu;
 },{"jquery":"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/jquery/dist/jquery.js"}],"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/bootstrap/dist/js/npm.js":[function(require,module,exports){

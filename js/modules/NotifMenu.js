@@ -21,6 +21,4 @@ var NotifMenu = function () {
     }
 }
 
-var n = new NotifMenu().init();
-
 module.exports = NotifMenu;
