@@ -429,7 +429,7 @@ $color-light: #9d9d9d;
   padding-bottom: 30px;
   padding: 0px 0px 30px 0px;
   .idea-picture {
-    max-height: 151px;
+    min-height: 151px;
     overflow: hidden;
     img {
       width: 100%;
@@ -470,6 +470,10 @@ $color-light: #9d9d9d;
       color: $color-danger;
       font-size: 1.2em;
       z-index: 2;
+    }
+
+    .idea-btn {
+      text-align: center;
     }
 
     .circle {
