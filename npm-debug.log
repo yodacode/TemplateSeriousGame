@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'handlebars', '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'handlebars', null ]
+5 verbose cache add name=undefined spec="handlebars" args=["handlebars",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'handlebars',
+6 verbose parsed url   path: 'handlebars',
+6 verbose parsed url   href: 'handlebars' }
+7 silly lockFile 9566e355-handlebars handlebars
+8 verbose lock handlebars /Users/benjamin/.npm/9566e355-handlebars.lock
+9 silly lockFile 9566e355-handlebars handlebars
+10 silly lockFile 9566e355-handlebars handlebars
+11 verbose addNamed [ 'handlebars', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 0ab5732f-handlebars handlebars@
+14 verbose lock handlebars@ /Users/benjamin/.npm/0ab5732f-handlebars.lock
+15 silly addNameRange { name: 'handlebars', range: '*', hasData: false }
+16 verbose request where is /handlebars
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id b5abf4718d449214
+19 verbose url raw /handlebars
+20 verbose url resolving [ 'https://registry.npmjs.org/', './handlebars' ]
+21 verbose url resolved https://registry.npmjs.org/handlebars
+22 verbose request where is https://registry.npmjs.org/handlebars
+23 info trying registry request attempt 1 at 10:38:39
+24 verbose etag "WX20QB17Q6JERLWVCW24MAUI"
+25 http GET https://registry.npmjs.org/handlebars
+26 http 200 https://registry.npmjs.org/handlebars
+27 silly registry.get cb [ 200,
+27 silly registry.get   { date: 'Fri, 20 Mar 2015 09:38:39 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"Y41LRO4FHQ56827UOCSSRY9R"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '51040',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-fra1235-FRA',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1426844319.426331,VS0,VE0',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly addNameRange number 2 { name: 'handlebars', range: '*', hasData: true }
+29 silly addNameRange versions [ 'handlebars',
+29 silly addNameRange   [ '1.0.6',
+29 silly addNameRange     '1.0.6-2',
+29 silly addNameRange     '1.0.7',
+29 silly addNameRange     '1.0.8',
+29 silly addNameRange     '1.0.9',
+29 silly addNameRange     '1.0.10',
+29 silly addNameRange     '1.0.11',
+29 silly addNameRange     '1.0.12',
+29 silly addNameRange     '1.1.0',
+29 silly addNameRange     '1.1.1',
+29 silly addNameRange     '1.1.2',
+29 silly addNameRange     '1.2.0',
+29 silly addNameRange     '1.2.1',
+29 silly addNameRange     '1.3.0',
+29 silly addNameRange     '2.0.0-alpha.1',
+29 silly addNameRange     '2.0.0-alpha.2',
+29 silly addNameRange     '2.0.0-alpha.3',
+29 silly addNameRange     '2.0.0-alpha.4',
+29 silly addNameRange     '2.0.0-beta.1',
+29 silly addNameRange     '2.0.0',
+29 silly addNameRange     '3.0.0',
+29 silly addNameRange     '1.0.2-beta',
+29 silly addNameRange     '1.0.4-beta',
+29 silly addNameRange     '1.0.5-beta' ] ]
+30 verbose addNamed [ 'handlebars', '3.0.0' ]
+31 verbose addNamed [ '3.0.0', '3.0.0' ]
+32 silly lockFile 47bafa30-handlebars-3-0-0 handlebars@3.0.0
+33 verbose lock handlebars@3.0.0 /Users/benjamin/.npm/47bafa30-handlebars-3-0-0.lock
+34 silly lockFile 8a7f9e22--handlebars-handlebars-3-0-0-tgz https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz
+35 verbose lock https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz /Users/benjamin/.npm/8a7f9e22--handlebars-handlebars-3-0-0-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz',
+36 verbose addRemoteTarball   '7f4e537f4dd6992869d66c01b7505eba3561a5d5' ]
+37 info retry fetch attempt 1 at 10:38:39
+38 verbose fetch to= /var/folders/rq/mh4_wcws5kdfz1ncdqf1876h0000gp/T/npm-15042-ghx_qbXz/registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz
+39 http GET https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz
+40 http 200 https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz
+41 silly lockFile 8a7f9e22--handlebars-handlebars-3-0-0-tgz https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz
+42 silly lockFile 8a7f9e22--handlebars-handlebars-3-0-0-tgz https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz
+43 silly lockFile 47bafa30-handlebars-3-0-0 handlebars@3.0.0
+44 silly lockFile 47bafa30-handlebars-3-0-0 handlebars@3.0.0
+45 silly lockFile 0ab5732f-handlebars handlebars@
+46 silly lockFile 0ab5732f-handlebars handlebars@
+47 error Error: EACCES, mkdir '/Users/benjamin/.npm/handlebars/3.0.0'
+47 error  { [Error: EACCES, mkdir '/Users/benjamin/.npm/handlebars/3.0.0']
+47 error   errno: 3,
+47 error   code: 'EACCES',
+47 error   path: '/Users/benjamin/.npm/handlebars/3.0.0' }
+48 error Please try running this command again as root/Administrator.
+49 error System Darwin 14.0.0
+50 error command "node" "/usr/local/bin/npm" "install" "handlebars" "--save"
+51 error cwd /Users/benjamin/Sites/TemplateIdeaPro
+52 error node -v v0.10.32
+53 error npm -v 1.4.28
+54 error path /Users/benjamin/.npm/handlebars/3.0.0
+55 error code EACCES
+56 error errno 3
+57 error stack Error: EACCES, mkdir '/Users/benjamin/.npm/handlebars/3.0.0'
+58 verbose exit [ 3, true ]

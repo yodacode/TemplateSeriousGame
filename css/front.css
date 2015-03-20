@@ -885,12 +885,12 @@
   overflow-y: scroll;
 }
 
-/* line 567, ../sass/front.scss */
-.widget.widget-remaning .widget-remaining-progress > svg {
+/* line 566, ../sass/front.scss */
+.widget.widget-timeline .widget-timeline-progress > svg {
   width: 40%;
   margin: 0px 30%;
 }
-/* line 571, ../sass/front.scss */
-.widget.widget-remaning .widget-remaining-progress .remaining-label {
+/* line 570, ../sass/front.scss */
+.widget.widget-timeline .widget-timeline-progress .remaining-label {
   color: #4e4d4e !important;
 }

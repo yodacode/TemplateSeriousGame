@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'handlebars', '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'handlebars', null ]
+6 verbose cache add name=undefined spec="handlebars" args=["handlebars",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'handlebars',
+7 verbose parsed url   path: 'handlebars',
+7 verbose parsed url   href: 'handlebars' }
+8 silly lockFile 9566e355-handlebars handlebars
+9 verbose lock handlebars /Users/benjamin/.npm/9566e355-handlebars.lock
+10 silly lockFile 9566e355-handlebars handlebars
+11 silly lockFile 9566e355-handlebars handlebars
+12 verbose addNamed [ 'handlebars', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 0ab5732f-handlebars handlebars@
+15 verbose lock handlebars@ /Users/benjamin/.npm/0ab5732f-handlebars.lock
+16 silly addNameRange { name: 'handlebars', range: '*', hasData: false }
+17 verbose request where is /handlebars
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id f5f00010ac44d0be
+20 verbose url raw /handlebars
+21 verbose url resolving [ 'https://registry.npmjs.org/', './handlebars' ]
+22 verbose url resolved https://registry.npmjs.org/handlebars
+23 verbose request where is https://registry.npmjs.org/handlebars
+24 info trying registry request attempt 1 at 10:39:30
+25 verbose etag "Y41LRO4FHQ56827UOCSSRY9R"
+26 http GET https://registry.npmjs.org/handlebars
+27 http 304 https://registry.npmjs.org/handlebars
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Fri, 20 Mar 2015 09:39:30 GMT',
+28 silly registry.get     server: 'Apache',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     'last-modified': 'Fri, 20 Mar 2015 09:39:25 GMT',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     etag: '"Y41LRO4FHQ56827UOCSSRY9R"',
+28 silly registry.get     age: '51',
+28 silly registry.get     'x-served-by': 'cache-fra1230-FRA',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '2',
+28 silly registry.get     'x-timer': 'S1426844370.318878,VS0,VE0',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'content-length': '0',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 verbose etag https://registry.npmjs.org/handlebars from cache
+30 silly addNameRange number 2 { name: 'handlebars', range: '*', hasData: true }
+31 silly addNameRange versions [ 'handlebars',
+31 silly addNameRange   [ '1.0.6',
+31 silly addNameRange     '1.0.6-2',
+31 silly addNameRange     '1.0.7',
+31 silly addNameRange     '1.0.8',
+31 silly addNameRange     '1.0.9',
+31 silly addNameRange     '1.0.10',
+31 silly addNameRange     '1.0.11',
+31 silly addNameRange     '1.0.12',
+31 silly addNameRange     '1.1.0',
+31 silly addNameRange     '1.1.1',
+31 silly addNameRange     '1.1.2',
+31 silly addNameRange     '1.2.0',
+31 silly addNameRange     '1.2.1',
+31 silly addNameRange     '1.3.0',
+31 silly addNameRange     '2.0.0-alpha.1',
+31 silly addNameRange     '2.0.0-alpha.2',
+31 silly addNameRange     '2.0.0-alpha.3',
+31 silly addNameRange     '2.0.0-alpha.4',
+31 silly addNameRange     '2.0.0-beta.1',
+31 silly addNameRange     '2.0.0',
+31 silly addNameRange     '3.0.0',
+31 silly addNameRange     '1.0.2-beta',
+31 silly addNameRange     '1.0.4-beta',
+31 silly addNameRange     '1.0.5-beta' ] ]
+32 verbose addNamed [ 'handlebars', '3.0.0' ]
+33 verbose addNamed [ '3.0.0', '3.0.0' ]
+34 silly lockFile 47bafa30-handlebars-3-0-0 handlebars@3.0.0
+35 verbose lock handlebars@3.0.0 /Users/benjamin/.npm/47bafa30-handlebars-3-0-0.lock
+36 silly lockFile 8a7f9e22--handlebars-handlebars-3-0-0-tgz https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz
+37 verbose lock https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz /Users/benjamin/.npm/8a7f9e22--handlebars-handlebars-3-0-0-tgz.lock
+38 verbose addRemoteTarball [ 'https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz',
+38 verbose addRemoteTarball   '7f4e537f4dd6992869d66c01b7505eba3561a5d5' ]
+39 info retry fetch attempt 1 at 10:39:30
+40 verbose fetch to= /var/folders/rq/mh4_wcws5kdfz1ncdqf1876h0000gp/T/npm-15071-TTasXeV_/registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz
+41 http GET https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz
+42 http 200 https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz
+43 silly lockFile 8a7f9e22--handlebars-handlebars-3-0-0-tgz https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz
+44 silly lockFile 8a7f9e22--handlebars-handlebars-3-0-0-tgz https://registry.npmjs.org/handlebars/-/handlebars-3.0.0.tgz
+45 silly lockFile 47bafa30-handlebars-3-0-0 handlebars@3.0.0
+46 silly lockFile 47bafa30-handlebars-3-0-0 handlebars@3.0.0
+47 silly lockFile 0ab5732f-handlebars handlebars@
+48 silly lockFile 0ab5732f-handlebars handlebars@
+49 error Error: EACCES, mkdir '/Users/benjamin/.npm/handlebars/3.0.0'
+49 error  { [Error: EACCES, mkdir '/Users/benjamin/.npm/handlebars/3.0.0']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/Users/benjamin/.npm/handlebars/3.0.0',
+49 error   parent: 'IdeaPro' }
+50 error Please try running this command again as root/Administrator.
+51 error System Darwin 14.0.0
+52 error command "node" "/usr/local/bin/npm" "install" "handlebars" "--save"
+53 error cwd /Users/benjamin/Sites/TemplateIdeaPro/js
+54 error node -v v0.10.32
+55 error npm -v 1.4.28
+56 error path /Users/benjamin/.npm/handlebars/3.0.0
+57 error code EACCES
+58 error errno 3
+59 error stack Error: EACCES, mkdir '/Users/benjamin/.npm/handlebars/3.0.0'
+60 verbose exit [ 3, true ]
