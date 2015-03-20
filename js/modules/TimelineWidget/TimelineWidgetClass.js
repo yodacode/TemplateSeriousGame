@@ -2,10 +2,11 @@ var $ = require('jquery');
 var WidgetClass = require('../Widget/WidgetClass.js');
 var ProgressBar = require('progressbar.js');
 
-var WidgetTimelineClass = function (widget) {
+var WidgetTimelineClass = function (widget, scroll) {
   this.widget = widget;
   this.build();
   this.progressContainer = this.widget.find('[data-widget-remaining-progress]').get(0);
+  this.drawTimeline();
 };
 
 WidgetTimelineClass.prototype = new WidgetClass();

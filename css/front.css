@@ -644,9 +644,13 @@
 .feed .feed-item {
   margin: 15px;
 }
+/* line 376, ../sass/front.scss */
+.feed .feed-more {
+  margin-top: 30px;
+}
 
 @media (max-width: 768px) {
-  /* line 380, ../sass/front.scss */
+  /* line 384, ../sass/front.scss */
   .feed .btn-thinder, .feed .btn-filter {
     display: block;
     width: 100%;
@@ -655,40 +659,134 @@
   }
 }
 /*-------------------------------------------*\
+  IDEA DETAIL
+/*-------------------------------------------*/
+/* line 396, ../sass/front.scss */
+.idea-detail {
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  border: solid 1px #9d9d9d;
+  background: #FFF;
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 30px;
+  padding-bottom: 30px;
+}
+/* line 408, ../sass/front.scss */
+.idea-detail .idea-detail-picture img {
+  width: 100%;
+}
+/* line 412, ../sass/front.scss */
+.idea-detail .idea-detail-content {
+  margin-top: 50px;
+}
+/* line 415, ../sass/front.scss */
+.idea-detail .idea-detail-popularity {
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* line 420, ../sass/front.scss */
+.idea-detail .idea-detail-tags {
+  text-align: right;
+}
+/* line 424, ../sass/front.scss */
+.idea-detail .idea-detail-author {
+  position: absolute;
+  background: #FFF;
+  top: 0px;
+  left: 0px;
+  min-width: 240px;
+  padding: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 435, ../sass/front.scss */
+.idea-detail .votes .votes-up, .idea-detail .votes .votes-down {
+  top: 18px;
+}
+
+/*-------------------------------------------*\
+  COMMENT
+/*-------------------------------------------*/
+/* line 446, ../sass/front.scss */
+.comment {
+  margin-bottom: 30px;
+}
+/* line 448, ../sass/front.scss */
+.comment .comment-item {
+  border-radius: 5px;
+  margin: 7px 0px;
+  padding: 15px 0px;
+  border: solid 1px #9d9d9d;
+  position: relative;
+  overflow: hidden;
+}
+/* line 456, ../sass/front.scss */
+.comment .comment-avatar {
+  text-align: right;
+  margin-bottom: 10px;
+}
+/* line 460, ../sass/front.scss */
+.comment .comment-username {
+  font-weight: bold;
+}
+/* line 464, ../sass/front.scss */
+.comment .comment-date {
+  font-size: 0.8em;
+}
+/* line 468, ../sass/front.scss */
+.comment .comment-content {
+  margin-top: 7px;
+}
+/* line 472, ../sass/front.scss */
+.comment .comments-votes {
+  text-align: right;
+}
+/* line 474, ../sass/front.scss */
+.comment .comments-votes a {
+  color: #4e4d4e;
+}
+/* line 477, ../sass/front.scss */
+.comment .comments-votes a.active {
+  color: #1a85d1;
+}
+
+/*-------------------------------------------*\
   VOTES
 /*-------------------------------------------*/
-/* line 391, ../sass/front.scss */
+/* line 485, ../sass/front.scss */
 .votes {
   width: 100%;
 }
-/* line 393, ../sass/front.scss */
+/* line 487, ../sass/front.scss */
 .votes .votes-content {
   position: relative;
 }
-/* line 396, ../sass/front.scss */
+/* line 490, ../sass/front.scss */
 .votes .votes-progress-bar {
   background: #78c800;
   height: 5px;
   width: 100%;
 }
-/* line 401, ../sass/front.scss */
+/* line 495, ../sass/front.scss */
 .votes .votes-up, .votes .votes-down {
   position: absolute;
   top: -18px;
+  text-align: right;
 }
-/* line 404, ../sass/front.scss */
+/* line 499, ../sass/front.scss */
 .votes .votes-up a, .votes .votes-down a {
   color: #4e4d4e;
 }
-/* line 408, ../sass/front.scss */
+/* line 503, ../sass/front.scss */
 .votes .votes-up {
   right: 5px;
 }
-/* line 411, ../sass/front.scss */
+/* line 506, ../sass/front.scss */
 .votes .votes-down {
   left: 5px;
 }
-/* line 414, ../sass/front.scss */
+/* line 509, ../sass/front.scss */
 .votes .votes-progress {
   background: #e02b07;
   width: 70%;
@@ -698,7 +796,7 @@
 /*-------------------------------------------*\
   IDEA
 /*-------------------------------------------*/
-/* line 423, ../sass/front.scss */
+/* line 518, ../sass/front.scss */
 .idea {
   width: 280px;
   background: #FFF;
@@ -708,16 +806,16 @@
   padding-bottom: 30px;
   padding: 0px 0px 30px 0px;
 }
-/* line 431, ../sass/front.scss */
+/* line 526, ../sass/front.scss */
 .idea .idea-picture {
   min-height: 151px;
   overflow: hidden;
 }
-/* line 434, ../sass/front.scss */
+/* line 529, ../sass/front.scss */
 .idea .idea-picture img {
   width: 100%;
 }
-/* line 439, ../sass/front.scss */
+/* line 534, ../sass/front.scss */
 .idea .idea-theme {
   position: absolute;
   left: -7px;
@@ -726,26 +824,26 @@
   color: #FFF;
   padding: 7px 10px;
 }
-/* line 448, ../sass/front.scss */
+/* line 543, ../sass/front.scss */
 .idea .idea-avatar {
   position: absolute;
   top: 45px;
   width: 100%;
   text-align: center;
 }
-/* line 455, ../sass/front.scss */
+/* line 550, ../sass/front.scss */
 .idea .idea-author {
   width: 90%;
   margin: 15px 0px 15px 5%;
   color: #9d9d9d;
 }
-/* line 461, ../sass/front.scss */
+/* line 556, ../sass/front.scss */
 .idea .idea-gems {
   position: absolute;
   right: -20px;
   top: 115px;
 }
-/* line 466, ../sass/front.scss */
+/* line 561, ../sass/front.scss */
 .idea .idea-gems .gems-score {
   position: absolute;
   left: -75px;
@@ -754,11 +852,11 @@
   font-size: 1.2em;
   z-index: 2;
 }
-/* line 475, ../sass/front.scss */
+/* line 570, ../sass/front.scss */
 .idea .idea-gems .idea-btn {
   text-align: center;
 }
-/* line 479, ../sass/front.scss */
+/* line 574, ../sass/front.scss */
 .idea .idea-gems .circle {
   position: relative;
   width: 80px;
@@ -799,20 +897,20 @@
   background: #FFF;
   color: #FFF;
 }
-/* line 481, ../sass/front.scss */
+/* line 576, ../sass/front.scss */
 .idea .idea-gems .circle .circle-content {
   font-size: 1.6em;
 }
-/* line 487, ../sass/front.scss */
+/* line 582, ../sass/front.scss */
 .idea .idea-description {
   width: 90%;
   margin: 15px 5% 15px 5%;
 }
-/* line 490, ../sass/front.scss */
+/* line 585, ../sass/front.scss */
 .idea .idea-description p {
   margin-bottom: 15px;
 }
-/* line 494, ../sass/front.scss */
+/* line 589, ../sass/front.scss */
 .idea .votes {
   position: absolute;
   bottom: 0px;
@@ -821,7 +919,7 @@
 /*-------------------------------------------*\
   USER
 /*-------------------------------------------*/
-/* line 503, ../sass/front.scss */
+/* line 598, ../sass/front.scss */
 .user {
   display: block;
   position: relative;
@@ -829,13 +927,19 @@
   margin-bottom: 10px;
   border-bottom: solid 1px #ddd;
 }
-/* line 510, ../sass/front.scss */
+/* line 605, ../sass/front.scss */
+.user:last-child {
+  border: none;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+/* line 611, ../sass/front.scss */
 .user .user-avatar {
   padding: 0px;
   display: inline-block;
   width: 20%;
 }
-/* line 515, ../sass/front.scss */
+/* line 616, ../sass/front.scss */
 .user .user-content {
   width: 75%;
   font-weight: bold;
@@ -843,35 +947,35 @@
   vertical-align: top;
   padding-top: 3px;
 }
-/* line 523, ../sass/front.scss */
+/* line 624, ../sass/front.scss */
 .user .user-username {
   margin-bottom: 3px;
 }
-/* line 525, ../sass/front.scss */
+/* line 626, ../sass/front.scss */
 .user .user-username a {
   color: #4e4d4e;
 }
-/* line 530, ../sass/front.scss */
+/* line 631, ../sass/front.scss */
 .user .user-gems {
   font-size: 0.8em;
 }
-/* line 534, ../sass/front.scss */
+/* line 635, ../sass/front.scss */
 .user .user-rank, .user .user-date {
   position: absolute;
   right: 15px;
   top: 5px;
   color: #9d9d9d;
 }
-/* line 541, ../sass/front.scss */
+/* line 642, ../sass/front.scss */
 .user .user-ideas {
   margin-top: 7px;
   text-align: center;
 }
-/* line 544, ../sass/front.scss */
+/* line 645, ../sass/front.scss */
 .user .user-ideas p {
   text-align: left;
 }
-/* line 547, ../sass/front.scss */
+/* line 648, ../sass/front.scss */
 .user .user-ideas .btn {
   margin: 0 auto;
 }
@@ -879,18 +983,69 @@
 /*-------------------------------------------*\
   WIDGET
 /*-------------------------------------------*/
-/* line 557, ../sass/front.scss */
+/* line 658, ../sass/front.scss */
 .widget .widget-scroll {
   max-height: 250px;
   overflow-y: scroll;
 }
 
-/* line 566, ../sass/front.scss */
+/* line 665, ../sass/front.scss */
+.widget.widget-timeline {
+  text-align: center;
+}
+/* line 668, ../sass/front.scss */
 .widget.widget-timeline .widget-timeline-progress > svg {
   width: 40%;
   margin: 0px 30%;
 }
-/* line 570, ../sass/front.scss */
+/* line 672, ../sass/front.scss */
 .widget.widget-timeline .widget-timeline-progress .remaining-label {
   color: #4e4d4e !important;
+}
+/* line 677, ../sass/front.scss */
+.widget.widget-timeline .widget-timeline-time {
+  text-align: center;
+  font-size: 1.1em;
+}
+/* line 680, ../sass/front.scss */
+.widget.widget-timeline .widget-timeline-time .time {
+  font-size: 1.6em;
+  color: #1a85d1;
+}
+/* line 686, ../sass/front.scss */
+.widget.widget-timeline .widget-timeline-label {
+  font-size: 0.9em;
+  margin-top: 10px;
+  color: #9d9d9d;
+}
+
+/* line 698, ../sass/front.scss */
+.widget.widget-invest .widget-invest-precious {
+  text-align: center;
+  color: #e02b07;
+  font-size: 7em;
+}
+/* line 704, ../sass/front.scss */
+.widget.widget-invest .widget-invest-gems {
+  text-align: center;
+  font-weight: bold;
+}
+/* line 707, ../sass/front.scss */
+.widget.widget-invest .widget-invest-gems .gems-counter {
+  font-size: 2em;
+}
+/* line 710, ../sass/front.scss */
+.widget.widget-invest .widget-invest-gems .gems-lebel {
+  font-size: 1.5em;
+}
+/* line 715, ../sass/front.scss */
+.widget.widget-invest .widget-invest-time {
+  text-align: center;
+  color: #9d9d9d;
+  margin-top: 10px;
+}
+/* line 719, ../sass/front.scss */
+.widget.widget-invest .widget-invest-time .time {
+  font-size: 1.2em;
+  font-weight: bold;
 }

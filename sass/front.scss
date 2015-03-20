@@ -373,6 +373,10 @@ $color-light: #9d9d9d;
     margin: 15px;
   }
 
+  .feed-more {
+    margin-top: 30px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -382,6 +386,96 @@ $color-light: #9d9d9d;
       width: 100%;
       position: static !important;
       margin-bottom: 7px;
+    }
+  }
+}
+
+/*-------------------------------------------*\
+  IDEA DETAIL
+/*-------------------------------------------*/
+.idea-detail {
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  border: solid 1px #9d9d9d;
+  background: #FFF;
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 30px;
+  padding-bottom: 30px;
+
+  .idea-detail-picture {
+    img {
+      width: 100%;
+    }
+  }
+  .idea-detail-content {
+    margin-top: 50px;
+  }
+  .idea-detail-popularity {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .idea-detail-tags {
+    text-align: right;
+  }
+
+  .idea-detail-author {
+    position: absolute;
+    background: #FFF;
+    top: 0px;
+    left: 0px;
+    min-width: 240px;
+    padding: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .votes {
+    .votes-up, .votes-down {      
+      top: 18px;
+    }
+
+  }
+
+}
+
+/*-------------------------------------------*\
+  COMMENT
+/*-------------------------------------------*/
+.comment {
+  margin-bottom: 30px;
+  .comment-item {
+    border-radius: 5px;
+    margin: 7px 0px;
+    padding: 15px 0px;
+    border: solid 1px #9d9d9d;
+    position: relative;
+    overflow: hidden;
+  }
+  .comment-avatar {    
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .comment-username {
+    font-weight: bold;
+  }
+
+  .comment-date {
+    font-size: 0.8em;
+  }
+
+  .comment-content {
+    margin-top: 7px;
+  }
+
+  .comments-votes {
+    text-align: right;    
+    a {
+      color: $color-dark;
+    }
+    a.active {
+      color: $color-primary;
     }
   }
 }
@@ -401,6 +495,7 @@ $color-light: #9d9d9d;
   .votes-up, .votes-down {
     position: absolute;
     top: -18px;
+    text-align: right;
     a {
       color: $color-dark;
     }
@@ -507,6 +602,12 @@ $color-light: #9d9d9d;
   margin-bottom: 10px;
   border-bottom: solid 1px #ddd;
 
+  &:last-child {
+    border: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
   .user-avatar {
     padding: 0px;
     display: inline-block;
@@ -562,6 +663,7 @@ $color-light: #9d9d9d;
 
 .widget {
   &.widget-timeline {
+    text-align: center;
     .widget-timeline-progress {
       & > svg {
         width: 40%;
@@ -572,6 +674,53 @@ $color-light: #9d9d9d;
       }
     }
 
+    .widget-timeline-time {
+      text-align: center;
+      font-size: 1.1em;
+      .time {
+        font-size: 1.6em;
+        color: $color-primary;
+      }
+    }
+
+    .widget-timeline-label {
+      font-size: 0.9em;
+      margin-top: 10px;
+      color: $color-light;
+    }
+
+  }
+}
+
+.widget {
+  &.widget-invest {
+
+    .widget-invest-precious {
+      text-align: center;
+      color: $color-danger;
+      font-size: 7em;
+    }
+
+    .widget-invest-gems {
+      text-align: center;
+      font-weight: bold;
+      .gems-counter {
+        font-size: 2em;
+      }
+      .gems-lebel {
+        font-size: 1.5em;
+      }
+    }
+
+    .widget-invest-time {
+      text-align: center;
+      color: $color-light;
+      margin-top: 10px;
+      .time {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
 
   }
 }
