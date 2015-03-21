@@ -715,11 +715,41 @@ $color-light: #9d9d9d;
     .widget-invest-time {
       text-align: center;
       color: $color-light;
-      margin-top: 10px;
+      margin: 7px 0px 15px 0px;
       .time {
         font-size: 1.2em;
         font-weight: bold;
       }
+    }
+
+    .widget-invest-mygems {      
+      margin-bottom: 10px;
+      .mygems-counter {
+        color: $color-success;
+      }
+    }
+
+    .widget-invest-btn {
+      margin-top: 18px;
+      border-color: $color-success;
+      color: $color-success;
+    }
+
+    .rangeslider, .rangeslider__fill {
+        height: 15px;
+    }
+
+    .rangeslider {
+        background-color: $color-success;
+        background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    }
+    .rangeslider__fill {
+        background: #ebebeb;
+    }
+    .rangeslider__handle {
+        width: 25px;
+        height: 25px;
+        top: -5px;
     }
 
   }

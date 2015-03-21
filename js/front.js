@@ -27,8 +27,6 @@ var widgetInvest = new WidgetInvestClass($('[data-widget-invest]'));
 // console.log(widgetPitch);
 // console.log(widgetTips);
 // console.log(widgetTimeline);
-
-
 // console.log(widgetInvest);
 
 $(window).on({

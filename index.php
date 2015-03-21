@@ -7,6 +7,7 @@
   <title>Idea Pro</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/icomoon.css">
+  <link rel="stylesheet" type="text/css" href="css/rangeslider.css">
   <link rel="stylesheet" type="text/css" href="css/front.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -255,23 +256,9 @@
               data-widget-color="success"
               data-widget-title="Investir sur cette idée"
               data-widget-class="widget-invest"
-              data-widget-icon="icon-precious">
-              <section data-widget-content>
-                <section class="widget-invest-precious"><i class="icon-precious"></i> </section>
-
-
-                <section class="widget-invest-gems">
-                  <span data-gems-counter class="gems-counter">465787</span> <span class="gems-label">gems</span>
-                </section>
-
-                <section class="widget-invest-time">
-                  <i class="icon-clock"></i>
-                  <span class="time" data-time-days>10</span> <span>Jours</span>
-                  <span class="time" data-time-hours>15</span> <span>Heures</span>
-                </section>
-                 
-                <input type="range" min="0" max="23454" value="0" data-widget-invest-rangeslider class="data-widget-invest-rangeslider">
-              </section>
+              data-widget-icon="icon-precious"
+              data-widget-invest-mygems="500"
+              data-widget-invest-gems="4500">       
             </section>
 
             <section
@@ -293,32 +280,14 @@
               </section>
             </section>
 
-
-
             <section
               data-widget-tips
               data-widget-color="default"
               data-widget-title="Trucs"
-              data-widget-class="widget-tips"
-              data-widget-scroll="true"
+              data-widget-class="widget-tips"              
               data-widget-icon="icon-wink">
               <section data-widget-content>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
-                <p>tips</p>
+                <p>Voici un tips</p>
               </section>
             </section>
 

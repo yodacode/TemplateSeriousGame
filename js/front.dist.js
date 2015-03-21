@@ -28,8 +28,6 @@ var widgetInvest = new WidgetInvestClass($('[data-widget-invest]'));
 // console.log(widgetPitch);
 // console.log(widgetTips);
 // console.log(widgetTimeline);
-
-
 // console.log(widgetInvest);
 
 $(window).on({
@@ -58,27 +56,56 @@ module.exports = FeedClass;
 var $ = require('jquery');
 var WidgetClass = require('../Widget/WidgetClass.js');
 var Rangeslider = require('rangeslider.js');
+var InvestWidgetTemplate = require('./InvestWidgetTemplate.js');
 
 var WidgetInvestClass = function (widget, scroll) {
-  this.widget = widget;
-  this.build();
-  
-  this.rangeslider = this.widget.find($('[data-widget-invest-rangeslider]'));  
+  WidgetClass.call(this, widget);
+
+  this.rangeslider = this.widget.find($('[data-widget-invest-rangeslider]'));
+  this.buildContent();
   this.bindRangeSlider(this.rangeslider);
 };
 
 WidgetInvestClass.prototype = new WidgetClass();
 
+
+WidgetInvestClass.prototype.buildContent = function () {
+  var data = {
+    gems: this.widget.attr('data-widget-invest-gems'),
+    mygems: this.widget.attr('data-widget-invest-mygems')
+  };
+  this.template = this.widget.find('[data-widget-body]').append(InvestWidgetTemplate(data));
+};
+
 WidgetInvestClass.prototype.bindRangeSlider = function () {
-  // console.log('bindRangeSlider');
-  this.rangeslider.hide();
+    
+  var that = this,
+    rangeslider = this.template.find($('[data-widget-invest-rangeslider]')),
+    myGemsCounter = this.template.find($('[data-mygems-counter]')),
+    initialValueMyGems = rangeslider.attr('max'),
+    investedGemsCounter = this.template.find($('[data-gems-counter]')),
+    initialValueInvestedGems = investedGemsCounter.text();
+
+  rangeslider.rangeslider({
+      polyfill: false,
+
+      onSlide: function(position, value) {        
+        
+        myGemsCounter.text(parseInt(initialValueMyGems, 10) - rangeslider.val());
+        investedGemsCounter.text(parseInt(rangeslider.val(), 10) + parseInt(initialValueInvestedGems, 10));
+      }
+  });
 };
 
 module.exports = WidgetInvestClass;
 
 
 
-},{"../Widget/WidgetClass.js":"/Users/benjamin/Sites/TemplateIdeaPro/js/modules/Widget/WidgetClass.js","jquery":"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/jquery/dist/jquery.js","rangeslider.js":"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/rangeslider.js/dist/rangeslider.js"}],"/Users/benjamin/Sites/TemplateIdeaPro/js/modules/NotifMenuClass.js":[function(require,module,exports){
+},{"../Widget/WidgetClass.js":"/Users/benjamin/Sites/TemplateIdeaPro/js/modules/Widget/WidgetClass.js","./InvestWidgetTemplate.js":"/Users/benjamin/Sites/TemplateIdeaPro/js/modules/InvestWidget/InvestWidgetTemplate.js","jquery":"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/jquery/dist/jquery.js","rangeslider.js":"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/rangeslider.js/dist/rangeslider.js"}],"/Users/benjamin/Sites/TemplateIdeaPro/js/modules/InvestWidget/InvestWidgetTemplate.js":[function(require,module,exports){
+var Handlebars = require('handlebars');
+var source = '<section class="widget-invest-precious"><i class="icon-precious"></i> </section> <section class="widget-invest-gems"> <span data-gems-counter class="gems-counter">{{gems}}</span> <span class="gems-label">gems</span> </section> <section class="widget-invest-time"> <i class="icon-clock"></i> <span class="time" data-time-days>10</span> <span>Jours</span> <span class="time" data-time-hours>15</span> <span>Heures</span> </section> <section class="widget-invest widget-invest-mygems">Mes gems :  <span class="mygems-counter" data-mygems-counter>{{mygems}}</span></section> <input type="range" min="0" max="{{mygems}}" value="0" data-widget-invest-rangeslider class="data-widget-invest-rangeslider"> <button class="btn btn-default btn-lg btn-block widget-invest-btn" data-widget-invest-btn>Investir</button>'; 
+module.exports = Handlebars.compile(source);
+},{"handlebars":"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/handlebars/lib/index.js"}],"/Users/benjamin/Sites/TemplateIdeaPro/js/modules/NotifMenuClass.js":[function(require,module,exports){
 // dependencies
 var $ = require('jquery');
 
@@ -109,8 +136,7 @@ var WidgetClass = require('../Widget/WidgetClass.js');
 var ProgressBar = require('progressbar.js');
 
 var WidgetTimelineClass = function (widget, scroll) {
-  this.widget = widget;
-  this.build();
+  WidgetClass.call(this, widget);
   this.progressContainer = this.widget.find('[data-widget-remaining-progress]').get(0);
   this.drawTimeline();
 };
@@ -120,7 +146,7 @@ WidgetTimelineClass.prototype = new WidgetClass();
 WidgetTimelineClass.prototype.drawTimeline = function () {
   var progress = new ProgressBar.Circle(this.progressContainer, {
     duration: 200,
-    color: "#FCB03C",
+    color: "#1A85D1",
     strokeWidth: 4,
     trailColor: "#ddd",
     text: {
@@ -128,8 +154,7 @@ WidgetTimelineClass.prototype.drawTimeline = function () {
       className: 'remaining-label',
     }
   });
-  // var second = new Date().getSeconds();
-  // console.log(second / 60);
+  
   progress.animate(0.8, function() {});
 
   return this;
@@ -145,39 +170,38 @@ var widgetTemplate = require('./WidgetTemplate.js');
 
 var WidgetClass = function (widget) {  
   
-  if (widget instanceof jQuery) {
     this.widget = widget;  
     this.scroll = scroll;
-    this.build();
+  
+  this.buildWrapper = function () {
+    var content = this.widget.find('[data-widget-content]').clone();
+
+    this.widget.find('[data-widget-content]').remove();
+    
+    this.data = {
+      color: this.widget.attr('data-widget-color'),
+      title: this.widget.attr('data-widget-title'),
+      icon: this.widget.attr('data-widget-icon'),
+      content: content.html(),
+      scroll: this.widget.attr('data-widget-scroll') == 'true' ? true : false,
+      className: this.widget.attr('data-widget-class')
+    };
+    
+    this.template = this.widget.append(widgetTemplate(this.data));    
+  }
+
+  if (widget instanceof jQuery) {
+    this.buildWrapper();
   }
 
 };
 
 
-WidgetClass.prototype.build = function () {
-
-  var content = this.widget.find('[data-widget-content]').clone();
-
-  this.widget.find('[data-widget-content]').remove();
-  
-  this.data = {
-    color: this.widget.attr('data-widget-color'),
-    title: this.widget.attr('data-widget-title'),
-    icon: this.widget.attr('data-widget-icon'),
-    content: content.html(),
-    scroll: this.widget.attr('data-widget-scroll') == 'true' ? true : false,
-    className: this.widget.attr('data-widget-class')
-  };
-  
-  this.template = this.widget.append(widgetTemplate(this.data));
-
-};
-
 module.exports = WidgetClass;
 },{"./WidgetTemplate.js":"/Users/benjamin/Sites/TemplateIdeaPro/js/modules/Widget/WidgetTemplate.js","jquery":"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/jquery/dist/jquery.js"}],"/Users/benjamin/Sites/TemplateIdeaPro/js/modules/Widget/WidgetTemplate.js":[function(require,module,exports){
 var Handlebars = require('handlebars');
 var $ = require('jquery');
-var source = '<section class="panel panel-{{color}} widget {{className}}" data-widget-tips> <section class="panel-heading"><h4><i class="{{icon}}"></i> {{title}}</h4></section> <section class="panel-body"> {{#if scroll}}  <section class="widget-scroll"> {{{content}}} </section> {{else}} {{{content}}} {{/if}}  </section> </section>'; 
+var source = '<section class="panel panel-{{color}} widget {{className}}" data-widget-tips> <section class="panel-heading"><h4><i class="{{icon}}"></i> {{title}}</h4></section> <section class="panel-body" data-widget-body> {{#if scroll}}  <section class="widget-scroll"> {{{content}}} </section> {{else}} {{{content}}} {{/if}}  </section> </section>'; 
 module.exports = Handlebars.compile(source);
 },{"handlebars":"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/handlebars/lib/index.js","jquery":"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/jquery/dist/jquery.js"}],"/Users/benjamin/Sites/TemplateIdeaPro/js/modules/Wizard/WizardClass.js":[function(require,module,exports){
 var $ = require('jquery');
@@ -24346,7 +24370,7 @@ module.exports = {
 }));
 
 },{"jquery":"/Users/benjamin/Sites/TemplateIdeaPro/js/node_modules/jquery/dist/jquery.js"}],"/usr/local/lib/node_modules/watchify/node_modules/browserify/lib/_empty.js":[function(require,module,exports){
-
+arguments[4]["/Users/benjamin/Sites/TemplateIdeaPro/js/modules/Widget/WidgetTemplate.js"][0].apply(exports,arguments)
 },{}],"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/path-browserify/index.js":[function(require,module,exports){
 (function (process){
 // Copyright Joyent, Inc. and other Node contributors.

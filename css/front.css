@@ -1042,10 +1042,43 @@
 .widget.widget-invest .widget-invest-time {
   text-align: center;
   color: #9d9d9d;
-  margin-top: 10px;
+  margin: 7px 0px 15px 0px;
 }
 /* line 719, ../sass/front.scss */
 .widget.widget-invest .widget-invest-time .time {
   font-size: 1.2em;
   font-weight: bold;
+}
+/* line 725, ../sass/front.scss */
+.widget.widget-invest .widget-invest-mygems {
+  margin-bottom: 10px;
+}
+/* line 727, ../sass/front.scss */
+.widget.widget-invest .widget-invest-mygems .mygems-counter {
+  color: #78c800;
+}
+/* line 732, ../sass/front.scss */
+.widget.widget-invest .widget-invest-btn {
+  margin-top: 18px;
+  border-color: #78c800;
+  color: #78c800;
+}
+/* line 738, ../sass/front.scss */
+.widget.widget-invest .rangeslider, .widget.widget-invest .rangeslider__fill {
+  height: 15px;
+}
+/* line 742, ../sass/front.scss */
+.widget.widget-invest .rangeslider {
+  background-color: #78c800;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+}
+/* line 746, ../sass/front.scss */
+.widget.widget-invest .rangeslider__fill {
+  background: #ebebeb;
+}
+/* line 749, ../sass/front.scss */
+.widget.widget-invest .rangeslider__handle {
+  width: 25px;
+  height: 25px;
+  top: -5px;
 }
